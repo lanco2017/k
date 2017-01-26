@@ -26338,15 +26338,15 @@ http://tinyurl.com/2017couple
  			// 		log.Print(err)
  			// 	}
 			case *linebot.AudioMessage:
-				//下面都是 OK 的寫法，但是還是沒辦法取得...........
-				//另外因為現在這個專案不適合這樣玩
-				originalContentURL := "https://dl.dropboxusercontent.com/u/358152/linebot/resource/ok.m4a"
-				duration := 1000
-				obj_message := linebot.NewAudioMessage(originalContentURL, duration)
- 				if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("這是什麼聲音？"),obj_message).Do(); err != nil {
- 					log.Print(1862)
- 					log.Print(err)
- 				}
+				// //下面都是 OK 的寫法，但是還是沒辦法取得...........
+				// //另外因為現在這個專案不適合這樣玩
+				// originalContentURL := "https://dl.dropboxusercontent.com/u/358152/linebot/resource/ok.m4a"
+				// duration := 1000
+				// obj_message := linebot.NewAudioMessage(originalContentURL, duration)
+ 			// 	if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("這是什麼聲音？"),obj_message).Do(); err != nil {
+ 			// 		log.Print(1862)
+ 			// 		log.Print(err)
+ 			// 	}
 			case *linebot.LocationMessage:
 				log.Print("message.Title = " + message.Title)
 				log.Print("message.Address = " + message.Address)
