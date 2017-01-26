@@ -26354,7 +26354,7 @@ http://tinyurl.com/2017couple
 				log.Print(message.Latitude)
 				log.Print("message.Longitude = ")
 				log.Print(message.Longitude)
-				obj_message := linebot.NewLocationMessage(message.Title, message.Address, message.Latitude, message.Longitude)
+				//obj_message := linebot.NewLocationMessage(message.Title, message.Address, message.Latitude, message.Longitude)
 				obj_message_map := linebot.NewLocationMessage("台北公館教會", "11677 台北市汀州路四段85巷2號", 25.007408,121.537688) //台北市信義區富陽街46號
 
 				//case 1
