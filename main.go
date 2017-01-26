@@ -26361,7 +26361,7 @@ http://tinyurl.com/2017couple
 				//obj_message_1 := linebot.NewLocationMessage("歡迎光臨", "地球", 25.022413, 121.556427) //台北市信義區富陽街46號
 					//obj_message_2 := linebot.NewLocationMessage("歡迎光臨", "哪個近", 25.022463, 121.556454) //這個遠
 
-				if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("你在這裡？\nhttps://maps.google.com/?q=加油站&near=" + fmt.Sprintf("%f",message.Latitude) + "," + fmt.Sprintf("%f",message.Longitude) + "),obj_message,linebot.NewTextMessage("我們教會在這裡～"),obj_message_map,linebot.NewStickerMessage("2", "514")).Do(); err != nil {
+				if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("你在這裡？\nhttps://maps.google.com/?q=加油站&near=" + fmt.Sprintf("%f",message.Latitude) + "," + fmt.Sprintf("%f",message.Longitude)),obj_message,linebot.NewTextMessage("我們教會在這裡～"),obj_message_map,linebot.NewStickerMessage("2", "514")).Do(); err != nil {
 					log.Print(1876)
 					log.Print(err)
 				}
