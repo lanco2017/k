@@ -23871,10 +23871,10 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 歡迎兄姊踴躍參加，7:30 在教會集合搭車前往。
 
 住址：
-台北市文山區光輝路50巷3弄17號1樓
-（https://goo.gl/maps/nx6pW3SPRpL2）
+台北市文山區
+（https://goo.gl/maps/）
 
-電話：02-2236-1214。
+電話：02-。
 
 附註：
 
@@ -23891,8 +23891,8 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		LineTemplate_family_focus := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				imageURL, "2017/01/24（二） 晚上8:00 於周明正長老 / 郭貴美姊妹伉儷府上", "台北市文山區光輝路50巷3弄17號1樓\n電話：02-2236-1214",
-				linebot.NewURITemplateAction("幫你播打電話", "tel:0222361214"),
+				imageURL, "2017/01/24（二） 晚上8:00 於周明正長老 / 郭貴美姊妹伉儷府上", "活動已結束",
+				linebot.NewURITemplateAction("幫你播打電話", "tel:"),
 				linebot.NewURITemplateAction("Google 地圖", "https://goo.gl/maps/nx6pW3SPRpL2"),
 				linebot.NewMessageTemplateAction("聯絡教會","聯絡資訊"),
 			),
@@ -25208,7 +25208,8 @@ http://tinyurl.com/2017couple
 								),
 								linebot.NewCarouselColumn(
 									imageURL, "其他功能", "各種這間教會的資訊",
-									linebot.NewMessageTemplateAction("聚會時間 & 週報", "週報"),
+									//linebot.NewMessageTemplateAction("聚會時間 & 週報", "週報"),TPEKKC
+									linebot.NewURITemplateAction("臉書快傳","https://m.me/TPEKKC"),
 									linebot.NewMessageTemplateAction("交通資訊", "教會地圖"),
 									linebot.NewMessageTemplateAction("網站資訊", "官方網站"),
 								),
