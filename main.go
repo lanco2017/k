@@ -26405,10 +26405,10 @@ http://tinyurl.com/2017couple
 					}
 				}
 
-					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message).Do(); err != nil {
-						log.Print(7806)
-						log.Print(err)
-					}
+					// if _, err = bot.ReplyMessage(event.ReplyToken, obj_message).Do(); err != nil {
+					// 	log.Print(7806)
+					// 	log.Print(err)
+					// }
 			}
 		}
 	}
