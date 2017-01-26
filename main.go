@@ -26398,22 +26398,23 @@ http://tinyurl.com/2017couple
 					// 	log.Print(7806)
 					// 	log.Print(err)
 					// }
-					if(username=="LL"){
-						if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("PackageID_int = " + strconv.Itoa(PackageID_int) + "、StickerID_int = " + strconv.Itoa(StickerID_int)), obj_message).Do(); err != nil {
-							log.Print(7806)
-							log.Print(err)
-						}
-					}else{
-						if _, err = bot.ReplyMessage(event.ReplyToken, obj_message).Do(); err != nil {
-							log.Print(7806)
-							log.Print(err)
-						}
+					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message).Do(); err != nil {
+						log.Print(7806)
+						log.Print(err)
 					}
 				}else{
 					// if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("．ω．"),obj_message).Do(); err != nil {
 					// 	log.Print(7811)
 					// 	log.Print(err)
 					// }
+					if(username=="LL"){
+						if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("PackageID_int = " + strconv.Itoa(PackageID_int) + "、StickerID_int = " + strconv.Itoa(StickerID_int)), obj_message).Do(); err != nil {
+							log.Print(7806)
+							log.Print(err)
+						}
+					}else{
+
+					}
 				}
 
 					// if _, err = bot.ReplyMessage(event.ReplyToken, obj_message).Do(); err != nil {
