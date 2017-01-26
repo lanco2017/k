@@ -26366,8 +26366,8 @@ http://tinyurl.com/2017couple
 					LineTemplate_address := linebot.NewCarouselTemplate(
 						linebot.NewCarouselColumn(
 							imageURL, "小天使來幫你帶路！", "你在「" + message.Address + "」？",
-							linebot.linebot.NewURITemplateAction("看看附近的教會？", "https://www.google.com/maps/search/%E6%95%99%E6%9C%83/@" + fmt.Sprintf("%f",message.Latitude) + "%2C" + fmt.Sprintf("%f",message.Longitude) + ",15z"),
-							linebot.linebot.NewURITemplateAction("帶你去公館教會","http://maps.google.com/maps?f=d&saddr=" + fmt.Sprintf("%f",message.Latitude) + "," + fmt.Sprintf("%f",message.Longitude) + "&daddr=25.007408,121.537688&hl=zh-tw&dirflg=&sort=num&mrsp=0&doflg=ptk&ttype=now"),
+							linebot.NewURITemplateAction("看看附近的教會？", "https://www.google.com/maps/search/%E6%95%99%E6%9C%83/@" + fmt.Sprintf("%f",message.Latitude) + "%2C" + fmt.Sprintf("%f",message.Longitude) + ",15z"),
+							linebot.NewURITemplateAction("帶你去公館教會","http://maps.google.com/maps?f=d&saddr=" + fmt.Sprintf("%f",message.Latitude) + "," + fmt.Sprintf("%f",message.Longitude) + "&daddr=25.007408,121.537688&hl=zh-tw&dirflg=&sort=num&mrsp=0&doflg=ptk&ttype=now"),
 							linebot.NewPostbackTemplateAction("公館教會地圖","公館教會地圖 POST", "教會地圖"),
 						),
 						linebot.NewCarouselColumn(
