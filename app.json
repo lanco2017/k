@@ -1,6 +1,6 @@
 {
-  "name": "kkcpct",
-  "description": "Line Bot API for kkcpct",
+  "name": "k",
+  "description": "Line Bot API for k",
   "repository": "https://github.com/lanco2017/k",
   "keywords": ["Line", "go", "static"],
   "buildpacks": [

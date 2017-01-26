@@ -1,1 +1,1 @@
-web: kkcpct
+web: k
