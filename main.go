@@ -26392,7 +26392,7 @@ http://tinyurl.com/2017couple
 					log.Print(err.Error())
 				}
 
-				特別處理過貼圖範圍外的貼圖
+				//特別處理過貼圖範圍外的貼圖
 				if (PackageID_int!=0) && (PackageID_int<=4){
 					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("．ω．"),obj_message_moto,obj_message).Do(); err != nil {
 						log.Print(7806)
