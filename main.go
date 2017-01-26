@@ -26361,7 +26361,7 @@ http://tinyurl.com/2017couple
 				//obj_message_1 := linebot.NewLocationMessage("歡迎光臨", "地球", 25.022413, 121.556427) //台北市信義區富陽街46號
 					//obj_message_2 := linebot.NewLocationMessage("歡迎光臨", "哪個近", 25.022463, 121.556454) //這個遠
 
-				if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("你在這裡？\nhttps://www.google.com/maps/search/%E6%95%99%E6%9C%83/@" + fmt.Sprintf("%f",message.Latitude) + "%2C" + fmt.Sprintf("%f",message.Longitude) + ",15z/"),obj_message,linebot.NewTextMessage("我們教會在這裡～\n為您預備導航路線圖：\nhttp://maps.google.com/maps?f=d&saddr=" + fmt.Sprintf("%f",message.Latitude) + "," + fmt.Sprintf("%f",message.Longitude) + "&daddr=25.007408,121.537688&hl=zh-tw&dirflg=&sort=num&mrsp=0&doflg=ptk&ttype=now"),obj_message_map,linebot.NewStickerMessage("2", "514")).Do(); err != nil {
+				if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("你好！小天使又來為大家服務囉！\n你在這裡？要看看附近的教會嗎？\nhttps://www.google.com/maps/search/%E6%95%99%E6%9C%83/@" + fmt.Sprintf("%f",message.Latitude) + "%2C" + fmt.Sprintf("%f",message.Longitude) + ",15z/"),obj_message,linebot.NewTextMessage("我們教會在這裡～\n為您預備導航路線圖：\nhttp://maps.google.com/maps?f=d&saddr=" + fmt.Sprintf("%f",message.Latitude) + "," + fmt.Sprintf("%f",message.Longitude) + "&daddr=25.007408,121.537688&hl=zh-tw&dirflg=&sort=num&mrsp=0&doflg=ptk&ttype=now"),obj_message_map,linebot.NewStickerMessage("2", "514")).Do(); err != nil {
 					log.Print(1876)
 					log.Print(err)
 				}
