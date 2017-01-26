@@ -24809,7 +24809,7 @@ http://tinyurl.com/2017couple
 							imageURL = "https://trello-attachments.s3.amazonaws.com/52ff05f27a3c676c046c37f9/585e3fb981c1240b4df88d73/34fba56ed5cbb5d7f0a9d7d2543ff238/C02018kong-koan_8481.JPG"
 							LineTemplate_test := linebot.NewCarouselTemplate(
 								linebot.NewCarouselColumn(
-									imageURL, "找教會？我們在這裡！", "也能找其他教會",
+									imageURL, "找教會？我們在這裡！", "也能找其他教會！",
 									linebot.NewURITemplateAction("Google Map 公館教會","https://goo.gl/maps/h6s5ccdXrL52"),
 									linebot.NewURITemplateAction("最推薦的教會地圖系統","https://church.oursweb.net/lite/"),
 									linebot.NewURITemplateAction("長老會查詢系統","http://www.pct.org.tw/look4church.aspx"),
