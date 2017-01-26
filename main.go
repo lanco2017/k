@@ -26398,9 +26398,16 @@ http://tinyurl.com/2017couple
 					// 	log.Print(7806)
 					// 	log.Print(err)
 					// }
-					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message).Do(); err != nil {
-						log.Print(7806)
-						log.Print(err)
+					if(username=="LL"){
+						if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("PackageID_int = " + PackageID_int + "、StickerID_int = " + StickerID_int), obj_message).Do(); err != nil {
+							log.Print(7806)
+							log.Print(err)
+						}
+					}else{
+						if _, err = bot.ReplyMessage(event.ReplyToken, obj_message).Do(); err != nil {
+							log.Print(7806)
+							log.Print(err)
+						}
 					}
 				}else{
 					// if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("．ω．"),obj_message).Do(); err != nil {
