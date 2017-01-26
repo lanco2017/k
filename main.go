@@ -26371,7 +26371,7 @@ http://tinyurl.com/2017couple
 					//https://github.com/line/line-bot-sdk-go/blob/master/examples/kitchensink/server.go handleSticker
 					//message.PackageID, message.StickerID
 				//丟跟對方一樣的貼圖回他
-			obj_message_moto := linebot.NewStickerMessage(message.PackageID, message.StickerID)
+			// obj_message_moto := linebot.NewStickerMessage(message.PackageID, message.StickerID)
 					//https://github.com/line/line-bot-sdk-go/blob/master/examples/kitchensink/server.go
 					//2016.12.20+ 多次框框的方式成功！（最多可以五個）
 					//.NewStickerMessage 發貼貼圖成功	 //https://devdocs.line.me/files/sticker_list.pdf			
@@ -26392,23 +26392,23 @@ http://tinyurl.com/2017couple
 					log.Print(err.Error())
 				}
 
-				//特別處理過貼圖範圍外的貼圖
-				if (PackageID_int!=0) && (PackageID_int<=4){
-					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("．ω．"),obj_message_moto,obj_message).Do(); err != nil {
+				// //特別處理過貼圖範圍外的貼圖
+				// if (PackageID_int!=0) && (PackageID_int<=4){
+				// 	if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("．ω．"),obj_message_moto,obj_message).Do(); err != nil {
+				// 		log.Print(7806)
+				// 		log.Print(err)
+				// 	}
+				// }else{
+				// 	if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("．ω．"),obj_message).Do(); err != nil {
+				// 		log.Print(7811)
+				// 		log.Print(err)
+				// 	}
+				// }
+
+					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message).Do(); err != nil {
 						log.Print(7806)
 						log.Print(err)
 					}
-				}else{
-					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("．ω．"),obj_message).Do(); err != nil {
-						log.Print(7811)
-						log.Print(err)
-					}
-				}
-
-					// if _, err = bot.ReplyMessage(event.ReplyToken, obj_message).Do(); err != nil {
-					// 	log.Print(7806)
-					// 	log.Print(err)
-					// }
 			}
 		}
 	}
