@@ -26362,16 +26362,51 @@ http://tinyurl.com/2017couple
 					//obj_message_2 := linebot.NewLocationMessage("歡迎光臨", "哪個近", 25.022463, 121.556454) //這個遠
 
 				//if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("你好！小天使來幫你帶路！\n你在這裡？\n要看看附近的教會嗎？\nhttps://www.google.com/maps/search/%E6%95%99%E6%9C%83/@" + fmt.Sprintf("%f",message.Latitude) + "%2C" + fmt.Sprintf("%f",message.Longitude) + ",15z\n以下是我剛剛收到的 GPS 定位地址！"),obj_message,linebot.NewTextMessage("我們教會在這裡～\n為您預備導航路線圖：\nhttp://maps.google.com/maps?f=d&saddr=" + fmt.Sprintf("%f",message.Latitude) + "," + fmt.Sprintf("%f",message.Longitude) + "&daddr=25.007408,121.537688&hl=zh-tw&dirflg=&sort=num&mrsp=0&doflg=ptk&ttype=now\n以下是我們教會的確切地址！"),obj_message_map,linebot.NewStickerMessage("2", "514")).Do(); err != nil {
-				if _, err = bot.ReplyMessage(
-					event.ReplyToken, 
-					linebot.NewStickerMessage("2", "514"),
-					linebot.NewTextMessage("你好！小天使來幫你帶路！\n你在「" + message.Address + "」？\n要看看附近的教會嗎？\nhttps://www.google.com/maps/search/%E6%95%99%E6%9C%83/@" + fmt.Sprintf("%f",message.Latitude) + "%2C" + fmt.Sprintf("%f",message.Longitude) + ",15z"),
-					// obj_message,
-					linebot.NewTextMessage("我們教會在這裡～\n為您預備導航路線圖：\nhttp://maps.google.com/maps?f=d&saddr=" + fmt.Sprintf("%f",message.Latitude) + "," + fmt.Sprintf("%f",message.Longitude) + "&daddr=25.007408,121.537688&hl=zh-tw&dirflg=&sort=num&mrsp=0&doflg=ptk&ttype=now\n下面是我們教會的地圖！"),
-					obj_message_map,
-				).Do(); err != nil {
-					log.Print(1876)
-					log.Print(err)
+				if target_item == "群組對話"{
+					LineTemplate_address := linebot.NewCarouselTemplate(
+						linebot.NewCarouselColumn(
+							imageURL, "小天使來幫你帶路！", "你在「" + message.Address + "」？",
+							linebot.linebot.NewURITemplateAction("看看附近的教會？", "https://www.google.com/maps/search/%E6%95%99%E6%9C%83/@" + fmt.Sprintf("%f",message.Latitude) + "%2C" + fmt.Sprintf("%f",message.Longitude) + ",15z"),
+							linebot.linebot.NewURITemplateAction("帶你去公館教會","http://maps.google.com/maps?f=d&saddr=" + fmt.Sprintf("%f",message.Latitude) + "," + fmt.Sprintf("%f",message.Longitude) + "&daddr=25.007408,121.537688&hl=zh-tw&dirflg=&sort=num&mrsp=0&doflg=ptk&ttype=now"),
+							linebot.NewPostbackTemplateAction("公館教會地圖","公館教會地圖 POST", "教會地圖"),
+						),
+						linebot.NewCarouselColumn(
+							imageURL, "教會資訊", "我可以幫大家取得教會資訊。",
+							linebot.NewPostbackTemplateAction("本週週報 & 聚會時間", "週報 POST","週報"),
+							linebot.NewPostbackTemplateAction("網站資訊","網站資訊 POST", "網站資訊"),
+							linebot.NewPostbackTemplateAction("聯絡資訊","聯絡資訊 POST", "聯絡資訊"),
+						),
+						LineTemplate_CarouselColumn_bible_one,
+						// LineTemplate_other_example,
+						// LineTemplate_other,
+						LineTemplate_CarouselColumn_feedback,
+					)
+					t_address := "帶你去公館教會！\nhttp://maps.google.com/maps?f=d&saddr=" + fmt.Sprintf("%f",message.Latitude) + "," + fmt.Sprintf("%f",message.Longitude) + "&daddr=25.007408,121.537688&hl=zh-tw&dirflg=&sort=num&mrsp=0&doflg=ptk&ttype=now"
+					obj_message_address := linebot.NewTemplateMessage(t_address, LineTemplate_address)
+					if _, err = bot.ReplyMessage(
+						event.ReplyToken, 
+						//linebot.NewStickerMessage("2", "514"),
+						//linebot.NewTextMessage("你好！小天使來幫你帶路！\n你在「" + message.Address + "」？\n要看看附近的教會嗎？\nhttps://www.google.com/maps/search/%E6%95%99%E6%9C%83/@" + fmt.Sprintf("%f",message.Latitude) + "%2C" + fmt.Sprintf("%f",message.Longitude) + ",15z"),
+						// obj_message,
+						//linebot.NewTextMessage("我們教會在這裡～\n為您預備導航路線圖：\nhttp://maps.google.com/maps?f=d&saddr=" + fmt.Sprintf("%f",message.Latitude) + "," + fmt.Sprintf("%f",message.Longitude) + "&daddr=25.007408,121.537688&hl=zh-tw&dirflg=&sort=num&mrsp=0&doflg=ptk&ttype=now\n下面是我們教會的地圖！"),
+						//obj_message_map,
+						obj_message_address,
+					).Do(); err != nil {
+						log.Print(18766)
+						log.Print(err)
+					}
+				}else{
+					if _, err = bot.ReplyMessage(
+						event.ReplyToken, 
+						linebot.NewStickerMessage("2", "514"),
+						linebot.NewTextMessage("你好！小天使來幫你帶路！\n你在「" + message.Address + "」？\n要看看附近的教會嗎？\nhttps://www.google.com/maps/search/%E6%95%99%E6%9C%83/@" + fmt.Sprintf("%f",message.Latitude) + "%2C" + fmt.Sprintf("%f",message.Longitude) + ",15z"),
+						// obj_message,
+						linebot.NewTextMessage("我們教會在這裡～\n為您預備導航路線圖：\nhttp://maps.google.com/maps?f=d&saddr=" + fmt.Sprintf("%f",message.Latitude) + "," + fmt.Sprintf("%f",message.Longitude) + "&daddr=25.007408,121.537688&hl=zh-tw&dirflg=&sort=num&mrsp=0&doflg=ptk&ttype=now\n下面是我們教會的地圖！"),
+						obj_message_map,
+					).Do(); err != nil {
+						log.Print(1876)
+						log.Print(err)
+					}
 				}
 			case *linebot.StickerMessage:
 				log.Print("message.PackageID = " + message.PackageID)
