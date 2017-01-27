@@ -23892,8 +23892,8 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 
 			linebot.NewCarouselColumn(
 				imageURL, "2017/01/24（二） 晚上8:00 於周明正長老 / 郭貴美姊妹伉儷府上", "活動已結束，為保護隱私通訊方式已銷毀",
-				linebot.NewURITemplateAction("幫你播打電話", "tel:"),
-				linebot.NewURITemplateAction("Google 地圖", "https://goo.gl/maps/"),
+				linebot.NewURITemplateAction("幫你播打電話", "tel:0229345003"),
+				linebot.NewURITemplateAction("Google 地圖", "https://goo.gl/maps"),
 				linebot.NewMessageTemplateAction("聯絡教會","聯絡資訊"),
 			),
 			linebot.NewCarouselColumn(
