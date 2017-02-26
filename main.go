@@ -302,36 +302,38 @@ https://week.kkcpct.org`
 						"社青團契：\n每週六 晚上07:00\n\n" +
 						"學青團契：\n每週六 晚上07:00"
 
-		next_week_msg := "本週預告（2017/02/26）" +
+		next_week_msg := "下週預告（2017/03/05）" +
 					"\n" +
-					// "預定行事：\n定期會員和會聯合禮拜\n原住民事工奉獻主日\n" +
-					// "國內外宣道奉獻主日\n" +
-					// "聖禮典（聖餐）\n" +
+					"預定行事：\n婦女事工紀念主日\n" +
+					"靈修會籌備會\n" +
+					"兒童營籌備會\n" +
 					"\n" +
-					"台語禮拜：王豐榮 牧師\n" +
-					"憂傷痛悔的心，主必不輕看：約珥書 2:1-2、12-17\n" +
+					"台語禮拜：吳慧馨 牧師\n" +
+					"主裡尊貴的你：詩篇 8:1-9\n" +
 					"\n" +
-					"♪ 聖詩 ♪：95、394\n" +
-					"啟應文：第 22 篇\n" +
+					"♪ 聖詩 ♪：196、396\n" +
+					"啟應文：第 23 篇\n" +
 					"\n" +
-					"獻詩：松年團契\n" +
-					"司禮：黃全業\n" +
-					"敬拜讚美團：雅歌（黃美俐）\n" +
-					"司獻：蔡貞慧、黃淑慧、謝豐全\n" +
-					"司琴：簡清芬\n" +
-					"招待：周金花、楊光榮、林玉秀\n" +
-					"音控：林順智\n" +
+					"獻詩：婦女團契\n" +
+					"司禮：李麗珠\n" +
+					"敬拜讚美團：雅歌（李君振）\n" +
+					"司獻：黃美俐、陳勝雄、黃全業\n" +
+					"司琴：王孟治\n" +
+					"招待：李碧珠、陳勝彥、吳欽英\n" +
+					"音控：李武智\n" +
 					"輪值長老：蘇家宏、黃美俐\n" +
-					"獻花者：張凌峰、張濟贇\n" +
+					"獻花者：楊光華\n" +
 					"\n" +
-					"華語禮拜：羅滋嶸 傳道\n" +
-					"用禱告交託人生\n" +
+					"華語禮拜：吳慧馨 傳道\n" +
+					"返璞歸真：馬太福音 4:1-11\n" +
 					"\n" +
-					"獻詩：松年團契\n" +
+					"♪：只要有祢在我左右（讚美之泉）\n" +
+					"\n" +
+					"獻詩：婦女團契\n" +
 					"司禮、敬拜讚美團、司獻、司琴、音控：少年團契\n" +
-					"招待：周金花、高春生、李美香\n" +
+					"招待：白壽雄、陳嘉崇、吳秀鳳\n" +
 					"輪值長老：蘇家宏、黃美俐\n" +
-					"獻花者：張凌峰、張濟贇\n" +
+					"獻花者：楊光華\n" +
 					"\n" +
 					"其他請參閱本季行事表：\nhttps://calendar.kkcpct.org/table\n\n"+
 					"教會 Google 行事曆：\nhttps://calendar.kkcpct.org\nhttps://s.kkcpct.org/2kBvGyR\n\n" + 
@@ -341,9 +343,9 @@ https://week.kkcpct.org`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是下週（2017/02/26）的經文",
-				linebot.NewPostbackTemplateAction("台語禮拜 約珥書 2:1-2","第一場預習","聖經 約珥書 2:1-2"),
-				linebot.NewPostbackTemplateAction("台語禮拜 約珥書 2:12-17","第一場預習","聖經 約珥書 2:12-17"),
+				Bible_imageURL, "主日禮拜經文預習", "以下是下週（2017/03/05）的經文",
+				linebot.NewPostbackTemplateAction("台語禮拜 詩篇 8:1-9","第一場預習","聖經 詩篇 8:1-9"),
+				linebot.NewPostbackTemplateAction("華語禮拜 馬太福音 4:1-11","第一場預習","聖經 馬太福音 4:1-11"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 				// linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewPostbackTemplateAction("下週預告","下週預告 POST", "下週預告"),
@@ -373,22 +375,22 @@ https://week.kkcpct.org`
 
 		LineTemplate_nextweek_read := linebot.NewCarouselTemplate(
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/02/19～2017/02/20",
-				linebot.NewPostbackTemplateAction("19 日 阿摩司書 6:1-14","新眼光查經","聖經 阿摩司書 6:1-14"),
-				linebot.NewPostbackTemplateAction("20 日 阿摩司書 7:1-9","新眼光查經","聖經 阿摩司書 7:1-9"),
-				linebot.NewPostbackTemplateAction("20 日 阿摩司書 8:1-3","新眼光查經","聖經 阿摩司書 8:1-3"),
+				Bible_imageURL, "本週新眼光讀經", "2017/02/26～2017/02/28",
+				linebot.NewPostbackTemplateAction("26 日 俄巴底亞書 1:1-14","新眼光查經","聖經 俄巴底亞書 1:1-14"),
+				linebot.NewPostbackTemplateAction("27 日 俄巴底亞書 1:15-16","新眼光查經","聖經 俄巴底亞書 1:15-16"),
+				linebot.NewPostbackTemplateAction("28 日 俄巴底亞書 1:17-21","新眼光查經","聖經 俄巴底亞書 1:17-21"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/02/21～2017/02/23",
-				linebot.NewPostbackTemplateAction("21 日 阿摩司書 7:10-17","新眼光查經","聖經 阿摩司書 7:10-17"),
-				linebot.NewPostbackTemplateAction("22 日 阿摩司書 8:4-14","新眼光查經","聖經 阿摩司書 8:4-14"),
-				linebot.NewPostbackTemplateAction("23 日 阿摩司書 9:1-6","新眼光查經","聖經 阿摩司書 9:1-6"),
+				Bible_imageURL, "本週新眼光讀經", "2017/03/01～2017/03/03",
+				linebot.NewPostbackTemplateAction("1 日 約拿書 1:1-3","新眼光查經","聖經 約拿書 1:1-3"),
+				linebot.NewPostbackTemplateAction("2 日 約拿書 1:4-17","新眼光查經","聖經 約拿書 1:4-17"),
+				linebot.NewPostbackTemplateAction("3 日 約拿書 2:1-10","新眼光查經","聖經 約拿書 2:1-10"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/02/24～2017/02/25",
-				linebot.NewPostbackTemplateAction("24 日 阿摩司書 9:7-10","新眼光查經","聖經 阿摩司書 9:7-10"),
-				linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
-				//linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
+				Bible_imageURL, "本週新眼光讀經", "2017/03/04",
+				linebot.NewPostbackTemplateAction("4 日 約拿書 3:1-10","新眼光查經","聖經 約拿書 3:1-10"),
+				// linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
+				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewMessageTemplateAction("本季行事曆","行事曆"),
 			),
 			linebot.NewCarouselColumn(
@@ -410,13 +412,13 @@ https://week.kkcpct.org`
 		)
 		t_nextweek_read := `本週新眼光讀經
 
-19 日 阿摩司書 6:1-14
-20 日 阿摩司書 7:1-9、8:1-3
-21 日 阿摩司書 7:10-17
-22 日 阿摩司書 8:4-14
-23 日 阿摩司書 9:1-6
-24 日 阿摩司書 9:7-10
-25 日 阿摩司書 9:11-15` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
+26 日 俄巴底亞書 1:1-14
+27 日 俄巴底亞書 1:15-16
+28 日 俄巴底亞書 1:17-21
+3 月 1 日 約拿書 1:1-3
+2 日 約拿書 1:4-17
+3 日 約拿書 2:1-10
+4 日 約拿書 3:1-10` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
 		obj_message_nextweek_read := linebot.NewTemplateMessage(t_nextweek_read, LineTemplate_nextweek_read)
 
 		//正題
