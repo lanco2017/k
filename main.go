@@ -324,6 +324,8 @@ https://week.kkcpct.org`
 					"輪值長老：李君振、李妍蓉\n" +
 					"獻花者：楊光華\n" +
 					"\n" +
+					"----\n" +
+					"\n" +
 					"華語禮拜：吳慧馨 傳道\n" +
 					"返璞歸真：馬太福音 4:1-11\n" +
 					"\n" +
@@ -344,8 +346,8 @@ https://week.kkcpct.org`
 
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "主日禮拜經文預習", "以下是下週（2017/03/05）的經文",
-				linebot.NewPostbackTemplateAction("台語禮拜 詩篇 8:1-9","第一場預習","聖經 詩篇 8:1-9"),
-				linebot.NewPostbackTemplateAction("華語禮拜 馬太福音 4:1-11","第一場預習","聖經 馬太福音 4:1-11"),
+				linebot.NewPostbackTemplateAction("台語禮拜 詩篇 8:1-9","第一場預習","中文聖經 詩篇 8:1-9"),
+				linebot.NewPostbackTemplateAction("華語禮拜 馬太福音 4:1-11","第一場預習","中文聖經 馬太福音 4:1-11"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 				// linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewPostbackTemplateAction("下週預告","下週預告 POST", "下週預告"),
