@@ -300,7 +300,10 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 					this_week_text_2 := `本週週報：https://s.kkcpct.org/2mlD2Ug
 
 近期週報收藏區：
-https://week.kkcpct.org`
+https://week.kkcpct.org
+
+用電子郵件訂閱週報：
+https://news.kkcpct.org`
 
 
 		weektime_msg := "台北公館教會的聚會資訊：\n\n" +
@@ -376,7 +379,8 @@ https://week.kkcpct.org`
 			),
 			linebot.NewCarouselColumn(
 				imageURL, "教會資訊", "其他可以幫大家取得的教會資訊",
-				linebot.NewPostbackTemplateAction("本週週報 & 聚會時間", "週報 POST","週報"),
+				//linebot.NewPostbackTemplateAction("本週週報 & 聚會時間", "週報 POST","週報"),
+				linebot.NewURITemplateAction("Mail 訂閱週報","https://news.kkcpct.org"),
 				linebot.NewPostbackTemplateAction("交通資訊","地圖 POST", "教會地圖"),
 				linebot.NewPostbackTemplateAction("聯絡資訊","聯絡資訊 POST", "聯絡資訊"),
 			),
