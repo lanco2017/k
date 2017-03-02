@@ -787,7 +787,7 @@ https://news.kkcpct.org`
 										t_family_focus := "請使用最新版的 LINE APP 查看此處"
 										obj_message_family_focus := linebot.NewTemplateMessage(t_family_focus, LineTemplate_family_focus)
 
-										if _, err = bot.ReplyMessage(event.ReplyToken,obj_message_family_focus,linebot.NewTextMessage("此內容僅限本群組使用，內容如有缺漏回報羅傳道。")).Do(); err != nil {
+										if _, err = bot.ReplyMessage(event.ReplyToken,linebot.NewTextMessage("此內容僅限本群組使用，內容如有缺漏回報羅傳道。"),obj_message_family_focus).Do(); err != nil {
 										    log.Print(1042)
 										    log.Print(err)
 										}
