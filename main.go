@@ -1009,8 +1009,8 @@ https://week.kkcpct.org`
 				log.Print("判斷是不是沒有匹配到內容（true = 沒找到）= ")
 				log.Print(reg_nofind.ReplaceAllString(bot_msg, "$1")=="我還沒學呢...")
 				
-				if bot_msg != ""{
-					if ((bot_msg != "") && (random()>1860081517322633183))  {
+					bot_msg_lo := lo(message.Text)
+					if ((bot_msg_lo != "") && (random()>1860081517322633183))  {
 						switch username{
 							case "群組封測人員2","青少年":
 								switch bot_msg{
@@ -1069,6 +1069,7 @@ https://week.kkcpct.org`
 								return
 						}
 					}
+				if bot_msg != ""{
 					//2016.12.20+ for test	
 					switch bot_msg{
 						case "c38b3100b02ef42411a99b7975e4ff47":
