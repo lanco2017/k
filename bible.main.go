@@ -101,7 +101,7 @@ func bible(text string,user_msgid string,reply_mode string) (string, string, str
 	log.Print("text 執行過濾 IFTTT 結束後 = " + text)
 
 	switch reg.ReplaceAllString(text, "$1"){
-	case "下週預告":
+	case "下週預告","下周預告":
 		print_string = "下週預告"
 	case "新眼光","每日經文":
 		print_string = "新眼光"
