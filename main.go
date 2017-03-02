@@ -25,6 +25,8 @@ import (
 
     // "encoding/json"
     	// "github.com/bitly/go-simplejson"
+	"math/rand"
+	"time"
 
 )
 
@@ -38,6 +40,14 @@ func main() {
 	port := os.Getenv("PORT")
 	addr := fmt.Sprintf(":%s", port)
 	http.ListenAndServe(addr, nil)
+}
+
+func random() int {  
+    rnd := rand.New(rand.NewSource(time.Now().UnixNano()))  
+    //for i := 0; i < 1; i++ {  
+        //fmt.Println(rnd.Int())  
+    //}
+    return rnd.Int();
 }
 
 //https://gist.github.com/synr/d3d68d42b12204d981b39203a0b16762
@@ -136,6 +146,10 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 				username = "群組封測人員"
 			case "Ceb12b46125861074c3b84106a5dcf750":
 				username = "會友群組"
+			case "C516948ebf27789543c92971e5ecf4a9b":
+				username = "青少年"
+			case "Ce82f808ee9915b3b58ca6955c2e1da61":
+				username = "群組封測人員2"
 		}
 		log.Print("username = " + username)
 
@@ -1000,6 +1014,54 @@ https://week.kkcpct.org`
 				if bot_msg != ""{
 					//2016.12.20+ for test	
 					switch bot_msg{
+								case "5fed8bfd031fa698e125567b128d1024":
+							// if username == "LL" {
+							// 	if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("登入成功！")).Do(); err != nil {
+							// 		log.Print(2162)
+							// 		log.Print(err)
+							// 	}
+							// }
+								if((random()>1860081517322633183)){
+								//if target_id_code == "U6f738a70b63c5900aa2c0cbbe0af91c4"{
+									//imageURL := "https://i2.bahamut.com.tw/anime/crazy_logo.png" //單位圖
+
+									LineTemplate_family_focus := linebot.NewCarouselTemplate(
+									    linebot.NewCarouselColumn(
+									        "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58a397cbf644e94a218a1ff0/2521b59aba6ceecd77177b55f50e512c/QT.jpg", "每日靈修", "每日靈修",
+									        //linebot.NewURITemplateAction("♪ 詩歌 ♪", "tel:02"),
+									        linebot.NewURITemplateAction("2017 每日靈修短文", "https://www.dropbox.com/sh/djnixzfkp36k4tn/AADatyCaOJRvLvtBbNn2SzTza?dl=0"),
+									        //linebot.NewMessageTemplateAction("聯絡教會","聯絡資訊"),
+									    ),
+									)
+									t_family_focus := "請使用最新版的 LINE APP 查看此處"
+									obj_message_family_focus := linebot.NewTemplateMessage(t_family_focus, LineTemplate_family_focus)
+
+									if _, err = bot.ReplyMessage(event.ReplyToken,obj_message_family_focus).Do(); err != nil {
+									    log.Print(1032)
+									    log.Print(err)
+									}
+									return
+								}
+								case "546eabd81e99ec08b8b0301af80310d9":
+								if((random()>1860081517322633183)){
+									LineTemplate_family_focus := linebot.NewCarouselTemplate(
+									    linebot.NewCarouselColumn(
+									        "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58a397cbf644e94a218a1ff0/b986aa3d94787dc232b57b4b794e44c8/worship.jpg", "♪ 詩歌 ♪", "詩歌、敬拜讚美...等。",
+									        linebot.NewURITemplateAction("♪ 詩歌 ♪", "https://www.dropbox.com/sh/0yfeslxsksnambx/AABZbqumA3vS_Wa9nnr_2IDOa?dl=0"),
+									        //linebot.NewURITemplateAction("2017 每日靈修短文", "https://goo.gl/maps"),
+									        //linebot.NewMessageTemplateAction("聯絡教會","聯絡資訊"),
+									    ),
+									)
+									t_family_focus := "請使用最新版的 LINE APP 查看此處"
+									obj_message_family_focus := linebot.NewTemplateMessage(t_family_focus, LineTemplate_family_focus)
+
+									if _, err = bot.ReplyMessage(event.ReplyToken,obj_message_family_focus).Do(); err != nil {
+									    log.Print(1050)
+									    log.Print(err)
+									}		
+									return	
+								}
+
 						case "c38b3100b02ef42411a99b7975e4ff47":
 							// if username == "LL" {
 							// 	if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("登入成功！")).Do(); err != nil {
