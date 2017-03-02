@@ -755,7 +755,7 @@ https://week.kkcpct.org`
 				// }
 
 					bot_msg_lo := lo(message.Text)
-					if ((bot_msg_lo != "") && (random()>1860081517322633183))  {
+					if ((bot_msg_lo != "") && (random()>1))  {
 						switch username{
 							case "群組封測人員2","青少年":
 								switch bot_msg_lo{
