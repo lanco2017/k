@@ -169,7 +169,7 @@ func lo(text string) (string) {
 		// }
 		print_string = ""
 	}
-	log.Print("Return 前的 print_string = " + print_string)
+	log.Print("ＬＯ　Return 前的 print_string = " + print_string)
 	return print_string//, chap_string, sec_string, bible_short_name
 }
 
