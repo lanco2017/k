@@ -754,6 +754,68 @@ https://week.kkcpct.org`
 				// 	return
 				// }
 
+					bot_msg_lo := lo(message.Text)
+					if ((bot_msg_lo != "") && (random()>1860081517322633183))  {
+						switch username{
+							case "群組封測人員2","青少年":
+								switch bot_msg_lo{
+									case "5fed8bfd031fa698e125567b128d1024":
+								// if username == "LL" {
+								// 	if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("登入成功！")).Do(); err != nil {
+								// 		log.Print(2162)
+								// 		log.Print(err)
+								// 	}
+								// }
+
+									//if target_id_code == "U6f738a70b63c5900aa2c0cbbe0af91c4"{
+										//imageURL := "https://i2.bahamut.com.tw/anime/crazy_logo.png" //單位圖
+
+										LineTemplate_family_focus := linebot.NewCarouselTemplate(
+										    linebot.NewCarouselColumn(
+										        "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58a397cbf644e94a218a1ff0/2521b59aba6ceecd77177b55f50e512c/QT.jpg", "每日靈修", "每日靈修",
+										        //linebot.NewURITemplateAction("♪ 詩歌 ♪", "tel:02"),
+										        linebot.NewURITemplateAction("2017 每日靈修短文", "https://www.dropbox.com/sh/djnixzfkp36k4tn/AADatyCaOJRvLvtBbNn2SzTza?dl=0"),
+										        //linebot.NewMessageTemplateAction("聯絡教會","聯絡資訊"),
+										    ),
+										)
+										t_family_focus := "請使用最新版的 LINE APP 查看此處"
+										obj_message_family_focus := linebot.NewTemplateMessage(t_family_focus, LineTemplate_family_focus)
+
+										if _, err = bot.ReplyMessage(event.ReplyToken,obj_message_family_focus).Do(); err != nil {
+										    log.Print(1042)
+										    log.Print(err)
+										}
+										return
+									//}
+									case "546eabd81e99ec08b8b0301af80310d9":
+										LineTemplate_family_focus := linebot.NewCarouselTemplate(
+										    linebot.NewCarouselColumn(
+										        "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58a397cbf644e94a218a1ff0/b986aa3d94787dc232b57b4b794e44c8/worship.jpg", "♪ 詩歌 ♪", "詩歌、敬拜讚美...等。",
+										        linebot.NewURITemplateAction("♪ 詩歌 ♪", "https://www.dropbox.com/sh/0yfeslxsksnambx/AABZbqumA3vS_Wa9nnr_2IDOa?dl=0"),
+										        //linebot.NewURITemplateAction("2017 每日靈修短文", "https://goo.gl/maps"),
+										        //linebot.NewMessageTemplateAction("聯絡教會","聯絡資訊"),
+										    ),
+										)
+										t_family_focus := "請使用最新版的 LINE APP 查看此處"
+										obj_message_family_focus := linebot.NewTemplateMessage(t_family_focus, LineTemplate_family_focus)
+
+										if _, err = bot.ReplyMessage(event.ReplyToken,obj_message_family_focus).Do(); err != nil {
+										    log.Print(1060)
+										    log.Print(err)
+										}		
+										return		
+								}
+								return
+							default:
+								log.Print(target_id_code)
+								log.Print("下面有東西嗎")
+								log.Print(random())
+								log.Print(random()>1860081517322633183)
+								return
+						}
+					}
+
+
 				//安靜名單
 				notalk := "Ceb12b46125861074c3b84106a5dcf750"//"C259ba6d5ace1c4932361612bf55394b3"//"Ceb12b46125861074c3b84106a5dcf750" //
 
@@ -1023,66 +1085,6 @@ https://week.kkcpct.org`
 				log.Print("判斷是不是沒有匹配到內容（true = 沒找到）= ")
 				log.Print(reg_nofind.ReplaceAllString(bot_msg, "$1")=="我還沒學呢...")
 				
-					bot_msg_lo := lo(message.Text)
-					if ((bot_msg_lo != "") && (random()>1860081517322633183))  {
-						switch username{
-							case "群組封測人員2","青少年":
-								switch bot_msg{
-									case "5fed8bfd031fa698e125567b128d1024":
-								// if username == "LL" {
-								// 	if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("登入成功！")).Do(); err != nil {
-								// 		log.Print(2162)
-								// 		log.Print(err)
-								// 	}
-								// }
-
-									//if target_id_code == "U6f738a70b63c5900aa2c0cbbe0af91c4"{
-										//imageURL := "https://i2.bahamut.com.tw/anime/crazy_logo.png" //單位圖
-
-										LineTemplate_family_focus := linebot.NewCarouselTemplate(
-										    linebot.NewCarouselColumn(
-										        "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58a397cbf644e94a218a1ff0/2521b59aba6ceecd77177b55f50e512c/QT.jpg", "每日靈修", "每日靈修",
-										        //linebot.NewURITemplateAction("♪ 詩歌 ♪", "tel:02"),
-										        linebot.NewURITemplateAction("2017 每日靈修短文", "https://www.dropbox.com/sh/djnixzfkp36k4tn/AADatyCaOJRvLvtBbNn2SzTza?dl=0"),
-										        //linebot.NewMessageTemplateAction("聯絡教會","聯絡資訊"),
-										    ),
-										)
-										t_family_focus := "請使用最新版的 LINE APP 查看此處"
-										obj_message_family_focus := linebot.NewTemplateMessage(t_family_focus, LineTemplate_family_focus)
-
-										if _, err = bot.ReplyMessage(event.ReplyToken,obj_message_family_focus).Do(); err != nil {
-										    log.Print(1042)
-										    log.Print(err)
-										}
-										return
-									//}
-									case "546eabd81e99ec08b8b0301af80310d9":
-										LineTemplate_family_focus := linebot.NewCarouselTemplate(
-										    linebot.NewCarouselColumn(
-										        "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58a397cbf644e94a218a1ff0/b986aa3d94787dc232b57b4b794e44c8/worship.jpg", "♪ 詩歌 ♪", "詩歌、敬拜讚美...等。",
-										        linebot.NewURITemplateAction("♪ 詩歌 ♪", "https://www.dropbox.com/sh/0yfeslxsksnambx/AABZbqumA3vS_Wa9nnr_2IDOa?dl=0"),
-										        //linebot.NewURITemplateAction("2017 每日靈修短文", "https://goo.gl/maps"),
-										        //linebot.NewMessageTemplateAction("聯絡教會","聯絡資訊"),
-										    ),
-										)
-										t_family_focus := "請使用最新版的 LINE APP 查看此處"
-										obj_message_family_focus := linebot.NewTemplateMessage(t_family_focus, LineTemplate_family_focus)
-
-										if _, err = bot.ReplyMessage(event.ReplyToken,obj_message_family_focus).Do(); err != nil {
-										    log.Print(1060)
-										    log.Print(err)
-										}		
-										return		
-								}
-								return
-							default:
-								log.Print(target_id_code)
-								log.Print("下面有東西嗎")
-								log.Print(random())
-								log.Print(random()>1860081517322633183)
-								return
-						}
-					}
 				if bot_msg != ""{
 					//2016.12.20+ for test	
 					switch bot_msg{
