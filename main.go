@@ -690,7 +690,7 @@ https://news.kkcpct.org`
 
 				switch username{
 					case "群組封測人員2","青少年","前任":
-						push_string = "很高興你邀請我進來這裡聊天！\n" + "我有針對這個群組才有的特殊功能！詳細請問羅哥！"
+						push_string = "很高興你邀請我進來這裡聊天！\n" + "我有針對這個群組才有的特殊功能！\n\n詳細用法請詢問羅傳道！"
 				}
 
 				//if source.GroupID == "Ca78bf89fa33b777e54b4c13695818f81"{
@@ -787,7 +787,7 @@ https://news.kkcpct.org`
 										t_family_focus := "請使用最新版的 LINE APP 查看此處"
 										obj_message_family_focus := linebot.NewTemplateMessage(t_family_focus, LineTemplate_family_focus)
 
-										if _, err = bot.ReplyMessage(event.ReplyToken,obj_message_family_focus).Do(); err != nil {
+										if _, err = bot.ReplyMessage(event.ReplyToken,obj_message_family_focus,linebot.NewTextMessage("此內容僅限本群組使用，內容如有缺漏回報羅傳道。")).Do(); err != nil {
 										    log.Print(1042)
 										    log.Print(err)
 										}
@@ -805,7 +805,7 @@ https://news.kkcpct.org`
 										t_family_focus := "請使用最新版的 LINE APP 查看此處"
 										obj_message_family_focus := linebot.NewTemplateMessage(t_family_focus, LineTemplate_family_focus)
 
-										if _, err = bot.ReplyMessage(event.ReplyToken,obj_message_family_focus).Do(); err != nil {
+										if _, err = bot.ReplyMessage(event.ReplyToken,obj_message_family_focus,linebot.NewTextMessage("此內容僅限本群組使用，內容如有缺漏回報羅傳道。")).Do(); err != nil {
 										    log.Print(1060)
 										    log.Print(err)
 										}		
