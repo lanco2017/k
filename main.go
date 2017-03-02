@@ -148,6 +148,8 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 				username = "青少年"
 			case "C0f81a7e0d9053cd305d2b27641e56090":
 				username = "群組封測人員2"
+			case "Ce82f808ee9915b3b58ca6955c2e1da61":
+				username = "前任"
 		}
 		log.Print("username = " + username)
 
@@ -683,7 +685,7 @@ https://week.kkcpct.org`
  				push_string := "很高興你邀請我進來這裡聊天！"
 
 				switch username{
-					case "群組封測人員2","青少年":
+					case "群組封測人員2","青少年","前任":
 						push_string = "很高興你邀請我進來這裡聊天！\n" + "我有針對這個群組才有的特殊功能！詳細請問羅哥！"
 				}
 
@@ -757,7 +759,7 @@ https://week.kkcpct.org`
 					bot_msg_lo := lo(message.Text)
 					if ((bot_msg_lo != "") && (random()>1))  {
 						switch username{
-							case "群組封測人員2","青少年":
+							case "群組封測人員2","青少年","前任":
 								switch bot_msg_lo{
 									case "5fed8bfd031fa698e125567b128d1024":
 								// if username == "LL" {
