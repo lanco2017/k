@@ -797,7 +797,7 @@ https://news.kkcpct.org`
 										LineTemplate_family_focus := linebot.NewCarouselTemplate(
 										    linebot.NewCarouselColumn(
 										        "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58a397cbf644e94a218a1ff0/b986aa3d94787dc232b57b4b794e44c8/worship.jpg", "♪ 詩歌 ♪", "詩歌、敬拜讚美...等。",
-										        linebot.NewURITemplateAction("♪ 詩歌 ♪", "https://www.dropbox.com/sh/0yfeslxsksnambx/AABZbqumA3vS_Wa9nnr_2IDOa?dl=0"),
+										        linebot.NewURITemplateAction("♪ 歌 ♪", "https://www.dropbox.com/sh/0yfeslxsksnambx/AABZbqumA3vS_Wa9nnr_2IDOa?dl=0"),
 										        //linebot.NewURITemplateAction("2017 每日靈修短文", "https://goo.gl/maps"),
 										        //linebot.NewMessageTemplateAction("聯絡教會","聯絡資訊"),
 										    ),
