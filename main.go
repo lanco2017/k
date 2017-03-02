@@ -140,8 +140,6 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 				username = "LL"
 			case "U0a8152d2cea8c981aa2436a0ab596bca":
 				username = "♪"
-			case "C0f81a7e0d9053cd305d2b27641e56090":
-				username = "私測 test2"
 			case "C259ba6d5ace1c4932361612bf55394b3":
 				username = "群組封測人員"
 			case "Ceb12b46125861074c3b84106a5dcf750":
