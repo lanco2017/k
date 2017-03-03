@@ -297,12 +297,13 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58b0703e34e821d7ad7ba80b/12da90b092fb64dcc1b406f7a64be35d/20170226.index_mini.jpg"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
-					this_week_text_2 := `本週週報：https://s.kkcpct.org/2mlD2Ug
+					this_week_text_2 := `本週週報（2017.03.05）：
+https://s.kkcpct.org/2mi0jch
 
 近期週報收藏區：
 https://week.kkcpct.org
 
-用電子郵件訂閱週報：
+歡迎使用電子郵件訂閱週報：
 https://news.kkcpct.org`
 
 
