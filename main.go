@@ -368,7 +368,7 @@ https://news.kkcpct.org`
 				linebot.NewPostbackTemplateAction("華語禮拜 馬太福音 4:1-11","第一場預習","中文聖經 馬太福音 4:1-11"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 				// linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
-				linebot.NewPostbackTemplateAction("下週預告","下週預告 POST", "下週預告"),
+				linebot.NewPostbackTemplateAction("本週禮拜內容預告","下週預告 POST", "下週預告"),
 				//linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
 			),
 			linebot.NewCarouselColumn(
