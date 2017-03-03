@@ -121,7 +121,7 @@ func bible(text string,user_msgid string,reply_mode string) (string, string, str
 		print_string = "舊約列表"
 	case "聚會時間":
 		print_string = "聚會時間"
-	case "週報","周報","最新訊息","本周資訊","本週資訊","本週週報":
+	case "週報","周報","最新訊息","本周資訊","本週資訊","本週週報","本週週報上線囉":
 		print_string = "週報"
 	case "聯絡資訊","教會電話","牧師手機":
 		print_string = "聯絡資訊"
