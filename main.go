@@ -304,7 +304,10 @@ https://s.kkcpct.org/2mi0jch
 https://week.kkcpct.org
 
 歡迎使用電子郵件訂閱週報：
-https://news.kkcpct.org`
+https://news.kkcpct.org
+
+訂閱後請將 news@kkcpct.org 加為聯絡人。
+以免誤認為垃圾信擋掉。`
 
 
 		weektime_msg := "台北公館教會的聚會資訊：\n\n" +
