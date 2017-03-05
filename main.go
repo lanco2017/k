@@ -262,19 +262,27 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		    		//obj_message_week_2 := linebot.NewImageMessage(ImageURL_week_2, ImageURL_week_2) //後面是預覽
 		    		//obj_message_week_3 := linebot.NewImageMessage(ImageURL_week_3, ImageURL_week_3) //後面是預覽
 
-					family_focus_text := `228 和平紀念日暫停一次`
+					family_focus_text := `本週家庭禮拜將於 2017/03/14（二）晚上 8:00 
+於王澄枝長老府上。
+
+歡迎兄姊踴躍參加，
+晚上 7:30 在教會集合搭車前往。 
+
+本會推動「家庭禮拜」，為家庭祝福禱告， 
+歡迎兄姊至公佈欄登記 2017 家庭禮拜日期。
+也可線上報名登記：http://blog.kkcpct.org/#contact`
 
 		LineTemplate_family_focus := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				imageURL, "家庭禮拜","二二八和平紀念日暫停一次",
+				imageURL, "家庭禮拜","2017/03/14（二）晚上 8:00 於王澄枝長老府上。",
 				// linebot.NewURITemplateAction("幫你播打電話", "tel:0800550880"),
 				//linebot.NewURITemplateAction("Google 地圖", "https://goo.gl/maps/fWophZAFGVL2"),
-				//linebot.NewMessageTemplateAction("聯絡教會","聯絡資訊"),
+				linebot.NewMessageTemplateAction("電話詢問交通資訊","tel:0229327941"),
 				//linebot.NewURITemplateAction("詳細交通資訊", "http://www.kycare.com.tw/index.php/contacts/"),
-				//linebot.NewPostbackTemplateAction("與教會聯絡","聯絡資訊 POST", "聯絡資訊"),
-				linebot.NewPostbackTemplateAction("228 和平紀念日暫停一次","聯絡資訊 POST", "聯絡資訊"),
-				linebot.NewPostbackTemplateAction("228 和平紀念日暫停一次","聯絡資訊 POST", "聯絡資訊"),
+				linebot.NewPostbackTemplateAction("與教會聯絡","聯絡資訊 POST", "聯絡資訊"),
+				// linebot.NewPostbackTemplateAction("228 和平紀念日暫停一次","聯絡資訊 POST", "聯絡資訊"),
+				// linebot.NewPostbackTemplateAction("228 和平紀念日暫停一次","聯絡資訊 POST", "聯絡資訊"),
 				linebot.NewURITemplateAction("報名家庭禮拜","http://blog.kkcpct.org/#contact"),
 			),
 			linebot.NewCarouselColumn(
@@ -402,20 +410,20 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 
 		LineTemplate_nextweek_read := linebot.NewCarouselTemplate(
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/02/26～2017/02/28",
-				linebot.NewPostbackTemplateAction("26 日 俄巴底亞書 1:1-14","新眼光查經","聖經 俄巴底亞書 1:1-14"),
-				linebot.NewPostbackTemplateAction("27 日 俄巴底亞書 1:15-16","新眼光查經","聖經 俄巴底亞書 1:15-16"),
-				linebot.NewPostbackTemplateAction("28 日 俄巴底亞書 1:17-21","新眼光查經","聖經 俄巴底亞書 1:17-21"),
+				Bible_imageURL, "本週新眼光讀經", "2017/03/05～2017/03/07",
+				linebot.NewPostbackTemplateAction("5 日 約拿書 4:1-11","新眼光查經","聖經 約拿書 4:1-11"),
+				linebot.NewPostbackTemplateAction("6 日 彌迦書 1:1-9","新眼光查經","聖經 彌迦書 1:1-9"),
+				linebot.NewPostbackTemplateAction("7 日 彌迦書 1:10-16","新眼光查經","聖經 彌迦書 1:10-16"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/03/01～2017/03/03",
-				linebot.NewPostbackTemplateAction("1 日 約拿書 1:1-3","新眼光查經","聖經 約拿書 1:1-3"),
-				linebot.NewPostbackTemplateAction("2 日 約拿書 1:4-17","新眼光查經","聖經 約拿書 1:4-17"),
-				linebot.NewPostbackTemplateAction("3 日 約拿書 2:1-10","新眼光查經","聖經 約拿書 2:1-10"),
+				Bible_imageURL, "本週新眼光讀經", "2017/03/08～2017/03/10",
+				linebot.NewPostbackTemplateAction("8 日 彌迦書 2:1-5","新眼光查經","聖經 彌迦書 2:1-5"),
+				linebot.NewPostbackTemplateAction("9 日 彌迦書 2:6-11","新眼光查經","聖經 彌迦書 2:6-11"),
+				linebot.NewPostbackTemplateAction("10 日 彌迦書 2:12-13","新眼光查經","聖經 彌迦書 2:12-13"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/03/04",
-				linebot.NewPostbackTemplateAction("4 日 約拿書 3:1-10","新眼光查經","聖經 約拿書 3:1-10"),
+				Bible_imageURL, "本週新眼光讀經", "2017/03/11",
+				linebot.NewPostbackTemplateAction("11 日 彌迦書 3:1-12","新眼光查經","聖經 彌迦書 3:1-12"),
 				// linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewMessageTemplateAction("本季行事曆","行事曆"),
@@ -438,14 +446,15 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			//LineTemplate_CarouselColumn_feedback,
 		)
 		t_nextweek_read := `本週新眼光讀經
+2017 3/5 ~ 3/11
 
-26 日 俄巴底亞書 1:1-14
-27 日 俄巴底亞書 1:15-16
-28 日 俄巴底亞書 1:17-21
-3 月 1 日 約拿書 1:1-3
-2 日 約拿書 1:4-17
-3 日 約拿書 2:1-10
-4 日 約拿書 3:1-10` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
+5 日 約拿書 4:1-11
+6 日 彌迦書 1:1-9
+7 日 彌迦書 1:10-16
+8 日 彌迦書 2:1-5
+9 日 彌迦書 2:6-11
+10 日 彌迦書 2:12-13
+11 日 彌迦書 3:1-12` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
 		obj_message_nextweek_read := linebot.NewTemplateMessage(t_nextweek_read, LineTemplate_nextweek_read)
 
 		//正題
