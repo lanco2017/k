@@ -323,52 +323,55 @@ https://news.kkcpct.org
 						"社青團契：\n每週六 晚上07:00\n\n" +
 						"學青團契：\n每週六 晚上07:00"
 
-		next_week_msg := "本週主日（2017/03/05）" +
-					"\n" +
-					"預定行事：\n婦女事工紀念主日\n" +
-					"靈修會籌備會\n" +
-					"兒童營籌備會\n" +
-					"\n" +
-					"台語禮拜：吳慧馨 牧師\n" +
-					"主裡尊貴的你：詩篇 8:1-9\n" +
-					"\n" +
-					"♪ 聖詩 ♪：196、396\n" +
-					"啟應文：第 23 篇\n" +
-					"\n" +
-					"獻詩：婦女團契\n" +
-					"司禮：李麗珠\n" +
-					"敬拜讚美團：雅歌（李君振）\n" +
-					"司獻：黃美俐、陳勝雄、黃全業\n" +
-					"司琴：王孟治\n" +
-					"招待：李碧珠、陳勝彥、吳欽英\n" +
-					"音控：李武智\n" +
-					"輪值長老：李君振、李妍蓉\n" +
-					"獻花者：楊光華\n" +
-					"\n" +
-					"----\n" +
-					"\n" +
-					"華語禮拜：吳慧馨 牧師\n" +
-					"返璞歸真：馬太福音 4:1-11\n" +
-					"\n" +
-					"♪：只要有祢在我左右（讚美之泉）\n" +
-					"\n" +
-					"獻詩：婦女團契\n" +
-					"司禮、敬拜讚美團、司獻、司琴、音控：少年團契\n" +
-					"招待：白壽雄、陳嘉崇、吳秀鳳\n" +
-					"輪值長老：李君振、李妍蓉\n" +
-					"獻花者：楊光華\n" +
-					"\n" +
-					"其他請參閱本季行事表：\nhttps://calendar.kkcpct.org/table\n\n"+
-					"教會 Google 行事曆：\nhttps://calendar.kkcpct.org\nhttps://s.kkcpct.org/2kBvGyR\n\n" + 
-					"Google 月曆訂閱 ics 檔：\nhttps://calendar.kkcpct.org/ics\n\n" +
-					"iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER"
+		next_week_msg := `下週主日預告（2017/03/12）
+預定行事：
+定期長執會
+
+台語禮拜：王豐榮 牧師 
+同心合意讚美神：使徒行傳 2:43-47
+
+♪ 聖詩 ♪：305、395
+啟應文：第 24 篇
+
+獻詩：聖歌隊 
+司禮：張正道
+敬拜讚美團：雅歌（李麗珠）
+司獻：陳基昌、李妍蓉、陳嘉崇
+司琴：林順智
+招待：黃文輝、李武智、林玉琴
+音控：李紹弘
+輪值長老：李君振、李妍蓉
+
+----
+
+華語禮拜：吳慧馨 牧師
+重生：約翰福音 3:1-8
+
+♪：委身之歌（讚美之泉）
+
+獻詩：聖歌隊
+司禮、敬拜讚美團、司獻、司琴、音控：學青團契
+招待：黃文輝、陳基昌、謝蕙光
+輪值長老：李君振、李妍蓉
+
+其他請參閱本季行事表：
+https://calendar.kkcpct.org/table
+
+教會 Google 行事曆：
+https://calendar.kkcpct.org
+https://s.kkcpct.org/2kBvGyR
+
+Google 月曆訂閱 ics 檔：
+https://calendar.kkcpct.org/ics
+
+iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是下週（2017/03/05）的經文",
-				linebot.NewPostbackTemplateAction("台語禮拜 詩篇 8:1-9","第一場預習","中文聖經新譯本 詩篇 8:1-9"),
-				linebot.NewPostbackTemplateAction("華語禮拜 馬太福音 4:1-11","第一場預習","中文聖經 馬太福音 4:1-11"),
+				Bible_imageURL, "主日禮拜經文預習", "以下是下週（2017/03/12）的經文",
+				linebot.NewPostbackTemplateAction("台語禮拜 使徒行傳 2:43-47","第一場預習","聖經 使徒行傳 2:43-47"),
+				linebot.NewPostbackTemplateAction("華語禮拜 約翰福音 3:1-8","第一場預習","聖經 約翰福音 3:1-8"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 				// linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewPostbackTemplateAction("本週禮拜內容預告","下週預告 POST", "下週預告"),
