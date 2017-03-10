@@ -302,7 +302,7 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 
 					//this_week_text_1 :=`從缺，本週週報資料還沒送進來。`
 
-					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58b93ca932ee2886e0caf993/553faf9dcaae371565cceaee26f50627/20170305.index_mini.jpg"
+					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58c2750c70f0e6bdf60176c4/e7bcecfff49dc68a9cdc9ee2871bd985/20170312.index_mini.jpg"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
 					this_week_text_2 := `本週週報（2017/03/05）：
@@ -331,7 +331,7 @@ https://news.kkcpct.org
 						"社青團契：\n每週六 晚上07:00\n\n" +
 						"學青團契：\n每週六 晚上07:00"
 
-		next_week_msg := `下週主日預告（2017/03/12）
+		next_week_msg := `本週主日預告（2017/03/12）
 預定行事：
 定期長執會
 
@@ -377,7 +377,7 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是下週（2017/03/12）的經文",
+				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/03/12）的經文",
 				linebot.NewPostbackTemplateAction("台語禮拜 使徒行傳 2:43-47","第一場預習","聖經 使徒行傳 2:43-47"),
 				linebot.NewPostbackTemplateAction("華語禮拜 約翰福音 3:1-8","第一場預習","聖經 約翰福音 3:1-8"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
