@@ -306,7 +306,7 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
 					this_week_text_2 := `本週週報（2017/03/05）：
-https://s.kkcpct.org/2mi0jch
+https://s.kkcpct.org/2n6V00m
 
 近期週報收藏區：
 https://week.kkcpct.org
