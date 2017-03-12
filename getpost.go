@@ -335,7 +335,8 @@ func HttpPost_JANDI(body, connectColor, title, code string) {
 		}]
 	}`
 
-	url := "https://wh.jandi.com/connect-api/webhook/12797246/78c9e40acac43d634e321a9c306815c3"//"https://wh.jandi.com/connect-api/webhook/12797246/a170893b87f09b238a9a85919efc6389"
+	//url := "https://wh.jandi.com/connect-api/webhook/12797246/78c9e40acac43d634e321a9c306815c3"//"https://wh.jandi.com/connect-api/webhook/12797246/a170893b87f09b238a9a85919efc6389"
+	url := "https://wh.jandi.com/connect-api/webhook/11691684/a481ad19001738278c7c034475d10af7"//"https://wh.jandi.com/connect-api/webhook/12797246/a170893b87f09b238a9a85919efc6389"
 	post_string_1 := HttpPost_JSON("JANDI", jsonStr, url)
 	if post_string_1 =="" {
 		log.Print("執行 post_string_1 " + `HttpPost_JSON("JANDI", jsonStr, url) 出錯！！！！！！` + " 無回應資料")
