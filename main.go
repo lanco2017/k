@@ -278,7 +278,7 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 				imageURL, "家庭禮拜","2017/03/21（二）晚上 8:00 於黃錦綢姊妹府上。",
 				// linebot.NewURITemplateAction("幫你播打電話", "tel:0800550880"),
 				//linebot.NewURITemplateAction("Google 地圖", "https://goo.gl/maps/fWophZAFGVL2"),
-				linebot.NewMessageTemplateAction("電話詢問交通資訊","tel:0229327941"),
+				linebot.NewURITemplateAction("電話詢問交通資訊","tel:0229327941"),//.NewMessageTemplateAction
 				//linebot.NewURITemplateAction("詳細交通資訊", "http://www.kycare.com.tw/index.php/contacts/"),
 				linebot.NewPostbackTemplateAction("與教會聯絡","聯絡資訊 POST", "聯絡資訊"),
 				// linebot.NewPostbackTemplateAction("228 和平紀念日暫停一次","聯絡資訊 POST", "聯絡資訊"),
