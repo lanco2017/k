@@ -383,13 +383,13 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/03/12）的經文",
-				linebot.NewPostbackTemplateAction("台語禮拜 使徒行傳 2:43-47","第一場預習","聖經 使徒行傳 2:43-47"),
-				linebot.NewPostbackTemplateAction("華語禮拜 約翰福音 3:1-8","第一場預習","聖經 約翰福音 3:1-8"),
+				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/03/19）的經文",
+				linebot.NewPostbackTemplateAction("主日禮拜 馬可福音 4:35-41","第一場預習","聖經 馬可福音 4:35-41"),
+				//linebot.NewPostbackTemplateAction("華語禮拜 約翰福音 3:1-8","第一場預習","聖經 約翰福音 3:1-8"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 				// linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewPostbackTemplateAction("本週禮拜內容預告","下週預告 POST", "下週預告"),
-				//linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
+				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "聖經查詢方法", "以下是示範。\n也可以手動輸入試試看各種組合。",
@@ -423,13 +423,13 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "本週新眼光讀經", "2017/03/15～2017/03/17",
-				linebot.NewPostbackTemplateAction("15 日 彌迦書 5:5b-15","新眼光查經","聖經 彌迦書 5:5b-15"),
+				linebot.NewPostbackTemplateAction("15 日 彌迦書 5:5-15","新眼光查經","聖經 彌迦書 5:5-15"),
 				linebot.NewPostbackTemplateAction("16 日 彌迦書 6:1-8","新眼光查經","聖經 彌迦書 6:1-8"),
 				linebot.NewPostbackTemplateAction("17 日 彌迦書 6:9-16","新眼光查經","聖經 彌迦書 6:9-16"),
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "本週新眼光讀經", "2017/03/18",
-				linebot.NewPostbackTemplateAction("11 日 彌迦書 7:1-7","新眼光查經","聖經 彌迦書 7:1-7"),
+				linebot.NewPostbackTemplateAction("18 日 彌迦書 7:1-7","新眼光查經","聖經 彌迦書 7:1-7"),
 				// linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewMessageTemplateAction("本季行事曆","行事曆"),
