@@ -262,11 +262,8 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		    		//obj_message_week_2 := linebot.NewImageMessage(ImageURL_week_2, ImageURL_week_2) //後面是預覽
 		    		//obj_message_week_3 := linebot.NewImageMessage(ImageURL_week_3, ImageURL_week_3) //後面是預覽
 
-					family_focus_text := `下週家庭禮拜將於 2017/03/28（二）晚上 8:00 
-於 賴劉蝶 姊妹府上。
-
-歡迎兄姊踴躍參加，
-晚上 7:40 在教會集合搭車前往。 
+					family_focus_text := `下週家庭禮拜 2017/04/04（二）
+適逢清明節，家庭禮拜暫停一次。  
 
 本會推動「家庭禮拜」，為家庭祝福禱告， 
 歡迎兄姊至公佈欄登記 2017 家庭禮拜日期。
