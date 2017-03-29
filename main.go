@@ -382,7 +382,7 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/04/02）的經文",
 				linebot.NewPostbackTemplateAction("台語禮拜 申命記 4:9-14","第一場預習","聖經 申命記 4:9-14"),
-				linebot.NewPostbackTemplateAction("華語禮拜 西番雅書 2:1-3","第一場預習","聖經 西番雅書 2:1-3"),
+				linebot.NewPostbackTemplateAction("華語禮拜 西番雅書 2:1-3","第一場預習","ncv 西番雅書 2:1-3"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 				// linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewPostbackTemplateAction("本週禮拜內容預告","下週預告 POST", "下週預告"),
