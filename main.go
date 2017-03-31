@@ -299,11 +299,11 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 
 					//this_week_text_1 :=`從缺，本週週報資料還沒送進來。`
 
-					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58d5264d6c6377e459f94433/e2e22c8491a2a9f164e6ae78e7bfba74/20170326.index_mini.jpg"
+					ImageURL_week_1 := "https://s.kkcpct.org/2opCsWG"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
-					this_week_text_2 := `本週週報（2017/03/26）：
-https://s.kkcpct.org/2nLHPSu
+					this_week_text_2 := `本週週報（2017/04/02）：
+https://s.kkcpct.org/2oHprHt
 
 近期週報收藏區：
 https://week.kkcpct.org
@@ -413,20 +413,20 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 
 		LineTemplate_nextweek_read := linebot.NewCarouselTemplate(
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/03/26～2017/03/28",
-				linebot.NewPostbackTemplateAction("26 日 哈巴谷書 1:1-4","新眼光查經","聖經 哈巴谷書 1:1-4"),
-				linebot.NewPostbackTemplateAction("27 日 哈巴谷書 1:5-11","新眼光查經","聖經 哈巴谷書 1:5-11"),
-				linebot.NewPostbackTemplateAction("28 日 哈巴谷書 1:12-17","新眼光查經","聖經 哈巴谷書 1:12-17"),
+				Bible_imageURL, "本週新眼光讀經", "2017/04/02～2017/04/04",
+				linebot.NewPostbackTemplateAction("2 日 西番雅書 2:1-3","新眼光查經","聖經 西番雅書 2:1-3"),
+				linebot.NewPostbackTemplateAction("3 日 西番雅書 2:4-15","新眼光查經","聖經 西番雅書 2:4-15"),
+				linebot.NewPostbackTemplateAction("4 日 西番雅書 3:1-7","新眼光查經","聖經 西番雅書 3:1-7"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/03/29～2017/03/31",
-				linebot.NewPostbackTemplateAction("29 日 哈巴谷書 2:1-4","新眼光查經","聖經 哈巴谷書 2:1-4"),
-				linebot.NewPostbackTemplateAction("30 日 哈巴谷書 2:5-20","新眼光查經","聖經 哈巴谷書 2:5-20"),
-				linebot.NewPostbackTemplateAction("31 日 哈巴谷書 3:1-19","新眼光查經","聖經 哈巴谷書 3:1-19"),
+				Bible_imageURL, "本週新眼光讀經", "2017/04/05～2017/04/07",
+				linebot.NewPostbackTemplateAction("5 日 西番雅書 3:8-13","新眼光查經","聖經 西番雅書 3:8-13"),
+				linebot.NewPostbackTemplateAction("6 日 西番雅書 3:14-20","新眼光查經","聖經 西番雅書 3:14-20"),
+				linebot.NewPostbackTemplateAction("7 日 哈該書 1:1-15","新眼光查經","聖經 哈該書 1:1-15"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/04/01",
-				linebot.NewPostbackTemplateAction("1 日 西番雅書 1:1-18","新眼光查經","聖經 西番雅書 1:1-18"),
+				Bible_imageURL, "本週新眼光讀經", "2017/04/08",
+				linebot.NewPostbackTemplateAction("8 日 哈該書 2:1-9","新眼光查經","聖經 哈該書 2:1-9"),
 				// linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewMessageTemplateAction("本季行事曆","行事曆"),
@@ -449,15 +449,15 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			//LineTemplate_CarouselColumn_feedback,
 		)
 		t_nextweek_read := `本週新眼光讀經
-2017 3/26 ~ 4/1
+2017 4/2 ~ 4/8
 
-26 日 哈巴谷書 1:1-4
-27 日 哈巴谷書 1:5-11
-28 日 哈巴谷書 1:12-17
-29 日 哈巴谷書 2:1-4
-30 日 哈巴谷書 2:5-20
-31 日 哈巴谷書 3:1-19
-4 月 1 日 西番雅書 1:1-18` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
+2 日 西番雅書 2:1-3
+3 日 西番雅書 2:4-15
+4 日 西番雅書 3:1-7
+5 日 西番雅書 3:8-13
+6 日 西番雅書 3:14-20
+7 日 哈該書 1:1-15
+8 日 哈該書 2:1-9` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
 		obj_message_nextweek_read := linebot.NewTemplateMessage(t_nextweek_read, LineTemplate_nextweek_read)
 
 		//正題
