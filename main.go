@@ -419,13 +419,13 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "本週新眼光讀經", "2017/04/12～2017/04/14",
-				linebot.NewPostbackTemplateAction("5 日 撒迦利亞書 1:1-6","新眼光查經","聖經 撒迦利亞書 1:1-6"),
-				linebot.NewPostbackTemplateAction("6 日 撒迦利亞書 1:7-17","新眼光查經","聖經 撒迦利亞書 1:7-17"),
-				linebot.NewPostbackTemplateAction("7 日 撒迦利亞書 1:18-2:5","新眼光查經","聖經 撒迦利亞書 1:18-2:5"),
+				linebot.NewPostbackTemplateAction("12 日 撒迦利亞書 1:1-6","新眼光查經","聖經 撒迦利亞書 1:1-6"),
+				linebot.NewPostbackTemplateAction("13 日 撒迦利亞書 1:7-17","新眼光查經","聖經 撒迦利亞書 1:7-17"),
+				linebot.NewPostbackTemplateAction("14 日 撒迦利亞書 1:18-2:5","新眼光查經","聖經 撒迦利亞書 1:18-2:5"),
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "本週新眼光讀經", "2017/04/15",
-				linebot.NewPostbackTemplateAction("8 日 撒迦利亞書 2:6-13","新眼光查經","聖經 撒迦利亞書 2:6-13"),
+				linebot.NewPostbackTemplateAction("15 日 撒迦利亞書 2:6-13","新眼光查經","聖經 撒迦利亞書 2:6-13"),
 				// linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewMessageTemplateAction("本季行事曆","行事曆"),
