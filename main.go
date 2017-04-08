@@ -448,15 +448,15 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			//LineTemplate_CarouselColumn_feedback,
 		)
 		t_nextweek_read := `本週新眼光讀經
-2017 4/2 ~ 4/8
+2017 4/9 ~ 4/15
 
-2 日 西番雅書 2:1-3
-3 日 西番雅書 2:4-15
-4 日 西番雅書 3:1-7
-5 日 西番雅書 3:8-13
-6 日 西番雅書 3:14-20
-7 日 哈該書 1:1-15
-8 日 哈該書 2:1-9` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
+9 日 哈該書 2:10-14
+10 日 哈該書 2:15-19
+11 日 哈該書 2:20-23
+12 日 撒迦利亞書 1:1-6
+13 日 撒迦利亞書 1:7-17
+14 日 撒迦利亞書 1:18-2:5
+15 日 撒迦利亞書 2:6-13` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
 		obj_message_nextweek_read := linebot.NewTemplateMessage(t_nextweek_read, LineTemplate_nextweek_read)
 
 		//正題
