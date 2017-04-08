@@ -299,11 +299,11 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 
 					//this_week_text_1 :=`從缺，本週週報資料還沒送進來。`
 
-					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58de82960da7037204af5240/af3aad5411875a530366c4c276209efd/20170402.index_mini.jpg"
+					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/58e768b70283ef969190679c/6b002d85a9684cbc9455c5f3727229cc/20170409_mini.jpg"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
-					this_week_text_2 := `本週週報（2017/04/02）：
-https://s.kkcpct.org/2oHprHt
+					this_week_text_2 := `本週週報（2017/04/09）：
+https://s.kkcpct.org/2nVIa1L
 
 近期週報收藏區：
 https://week.kkcpct.org
@@ -331,36 +331,35 @@ https://news.kkcpct.org
 		next_week_msg := `本週主日預告（2017/04/02）
 預定行事：
 
-※ 清明追思
-※ 教會學校紀念主日
+※ 棕樹主日、受難週開始 
 
 ----
 
 台語禮拜：王豐榮 牧師
-將您所見傳給子孫：申命記 4:9-14
+主要用你：馬可福音 11:1-10
 
-♪ 聖詩 ♪：451、397 
-啟應文：第 26 篇 
+♪ 聖詩 ♪：86、398
+啟應文：第 27 篇 
 
 獻詩：聖歌隊 
-司禮：蘇家宏
-敬拜讚美團：雅歌（陳水上）
-司獻：陳基昌、李妍蓉、陳嘉崇
-司琴：林順智
-招待：蔡美麗、賴劉蝶、王訓忠
-音控：李武智
+司禮：陳基昌
+敬拜讚美團：雅歌（李妍蓉）
+司獻：黃美俐、陳勝雄、黃全業
+司琴：李敦華
+招待：施宏政、楊威、陳雅華
+音控：林順智
 輪值長老：李致霖、陳勝雄
 
 ----
 
 華語禮拜：吳慧馨 牧師
-謙卑，再謙卑！：西番雅書 2:1-3
+和散那！：馬太福音 21:8-9
 
-♪：一顆謙卑的心、我願為你去
+♪：因祂十架 Without His Cross
 
 獻詩：聖歌隊
-司禮、敬拜讚美團、司獻、司琴：詠恩敬拜讚美團
-音控：青少契 招待：蔡美麗、黃文美
+司禮、敬拜讚美團、司獻、司琴：少年團契
+音控：青少契 招待：施宏政、陳怡慧
 輪值長老：李致霖、陳勝雄
 
 ----
@@ -380,9 +379,9 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/04/02）的經文",
-				linebot.NewPostbackTemplateAction("台語禮拜 申命記 4:9-14","第一場預習","聖經 申命記 4:9-14"),
-				linebot.NewPostbackTemplateAction("華語禮拜 西番雅書 2:1-3","第一場預習","ncv 西番雅書 2:1-3"),
+				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/04/09）的經文",
+				linebot.NewPostbackTemplateAction("台語禮拜 馬可福音 11:1-10","第一場預習","聖經 馬可福音 11:1-10"),
+				linebot.NewPostbackTemplateAction("華語禮拜 馬太福音 21:8-9","第一場預習","ncv 馬太福音 21:8-9"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 				// linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewPostbackTemplateAction("本週禮拜內容預告","下週預告 POST", "下週預告"),
