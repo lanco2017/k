@@ -412,10 +412,10 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 
 		LineTemplate_nextweek_read := linebot.NewCarouselTemplate(
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/04/02～2017/04/04",
-				linebot.NewPostbackTemplateAction("2 日 西番雅書 2:1-3","新眼光查經","聖經 西番雅書 2:1-3"),
-				linebot.NewPostbackTemplateAction("3 日 西番雅書 2:4-15","新眼光查經","聖經 西番雅書 2:4-15"),
-				linebot.NewPostbackTemplateAction("4 日 西番雅書 3:1-7","新眼光查經","聖經 西番雅書 3:1-7"),
+				Bible_imageURL, "本週新眼光讀經", "2017/04/09～2017/04/11",
+				linebot.NewPostbackTemplateAction("9 日 哈該書 2:10-14","新眼光查經","聖經 哈該書 2:10-14"),
+				linebot.NewPostbackTemplateAction("10 日 哈該書 2:15-19","新眼光查經","聖經 哈該書 2:15-19"),
+				linebot.NewPostbackTemplateAction("11 日 哈該書 2:20-23","新眼光查經","聖經 哈該書 2:20-23"),
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "本週新眼光讀經", "2017/04/05～2017/04/07",
