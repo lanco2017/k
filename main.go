@@ -262,8 +262,8 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		    		//obj_message_week_2 := linebot.NewImageMessage(ImageURL_week_2, ImageURL_week_2) //後面是預覽
 		    		//obj_message_week_3 := linebot.NewImageMessage(ImageURL_week_3, ImageURL_week_3) //後面是預覽
 
-					family_focus_text := `下週家庭禮拜 2017/04/04（二）
-適逢清明節，家庭禮拜暫停一次。  
+					family_focus_text := `下週家庭禮拜 2017/04/18（二）
+牧師參加總會通常年會，家庭禮拜暫停一次。  
 
 本會推動「家庭禮拜」，為家庭祝福禱告， 
 歡迎兄姊至公佈欄登記 2017 家庭禮拜日期。
@@ -272,7 +272,7 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		LineTemplate_family_focus := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				imageURL, "家庭禮拜","2017/03/28（二）晚上 8:00 於 賴劉蝶 姊妹府上。",
+				imageURL, "家庭禮拜","2017/04/18（二）暫停一次",
 				// linebot.NewURITemplateAction("幫你播打電話", "tel:0800550880"),
 				//linebot.NewURITemplateAction("Google 地圖", "https://goo.gl/maps/fWophZAFGVL2"),
 				linebot.NewURITemplateAction("電話詢問交通資訊","tel:0229327941"),//.NewMessageTemplateAction
