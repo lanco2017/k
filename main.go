@@ -328,39 +328,31 @@ https://news.kkcpct.org
 						"社青團契：\n每週六 晚上07:00\n\n" +
 						"學青團契：\n每週六 晚上07:00"
 
-		next_week_msg := `本週主日預告（2017/04/02）
+		next_week_msg := `本週主日預告（2017/04/16）
 預定行事：
 
-※ 棕樹主日、受難週開始 
+※ 復活節聯合讚美禮拜
+※ 聖禮典（洗禮、聖餐）
+※ 定期小會
+※ 下午1:00~3:00長執訓練會
 
 ----
 
-台語禮拜：王豐榮 牧師
-主要用你：馬可福音 11:1-10
+聯合禮拜：王豐榮 牧師
+你在找誰呢？：約翰福音 20:11-18
 
-♪ 聖詩 ♪：86、398
-啟應文：第 27 篇 
+♪ 聖詩 ♪：102、386
+啟應文：第 28 篇 
 
 獻詩：聖歌隊 
-司禮：陳基昌
-敬拜讚美團：雅歌（李妍蓉）
-司獻：黃美俐、陳勝雄、黃全業
-司琴：李敦華
-招待：施宏政、楊威、陳雅華
-音控：林順智
+司禮：張正道
+敬拜讚美團：雅歌（李君振）
+司獻：蔡貞慧、謝豐全、陳嘉崇
+司琴：簡清芬
+招待：梁靜珍、王房惠、謝淑援
+音控：李紹弘
 輪值長老：李致霖、陳勝雄
-
-----
-
-華語禮拜：吳慧馨 牧師
-和散那！：馬太福音 21:8-9
-
-♪：因祂十架 Without His Cross
-
-獻詩：聖歌隊
-司禮、敬拜讚美團、司獻、司琴：少年團契
-音控：青少契 招待：施宏政、陳怡慧
-輪值長老：李致霖、陳勝雄
+獻花者：高麗卿、張佑琪
 
 ----
 
@@ -379,13 +371,13 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/04/09）的經文",
-				linebot.NewPostbackTemplateAction("台語禮拜 馬可福音 11:1-10","第一場預習","聖經 馬可福音 11:1-10"),
-				linebot.NewPostbackTemplateAction("華語禮拜 馬太福音 21:8-9","第一場預習","ncv 馬太福音 21:8-9"),
+				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/04/16）的經文",
+				linebot.NewPostbackTemplateAction("聯合禮拜 約翰福音 20:11-18","第一場預習","聖經 約翰福音 20:11-18"),
+// 				linebot.NewPostbackTemplateAction("華語禮拜 馬太福音 21:8-9","第一場預習","ncv 馬太福音 21:8-9"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 				// linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewPostbackTemplateAction("本週禮拜內容預告","下週預告 POST", "下週預告"),
-				//linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
+				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "聖經查詢方法", "以下是示範。\n也可以手動輸入試試看各種組合。",
@@ -412,20 +404,20 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 
 		LineTemplate_nextweek_read := linebot.NewCarouselTemplate(
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/04/09～2017/04/11",
-				linebot.NewPostbackTemplateAction("9 日 哈該書 2:10-14","新眼光查經","聖經 哈該書 2:10-14"),
-				linebot.NewPostbackTemplateAction("10 日 哈該書 2:15-19","新眼光查經","聖經 哈該書 2:15-19"),
-				linebot.NewPostbackTemplateAction("11 日 哈該書 2:20-23","新眼光查經","聖經 哈該書 2:20-23"),
+				Bible_imageURL, "本週新眼光讀經", "2017/04/16～2017/04/18",
+				linebot.NewPostbackTemplateAction("16 日 撒迦利亞書 3:1-10","新眼光查經","聖經 撒迦利亞書 3:1-10"),
+				linebot.NewPostbackTemplateAction("17 日 撒迦利亞書 4:1-14","新眼光查經","聖經 撒迦利亞書 4:1-14"),
+				linebot.NewPostbackTemplateAction("18 日 撒迦利亞書 5:1-4","新眼光查經","聖經 撒迦利亞書 5:1-4"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/04/12～2017/04/14",
-				linebot.NewPostbackTemplateAction("12 日 撒迦利亞書 1:1-6","新眼光查經","聖經 撒迦利亞書 1:1-6"),
-				linebot.NewPostbackTemplateAction("13 日 撒迦利亞書 1:7-17","新眼光查經","聖經 撒迦利亞書 1:7-17"),
-				linebot.NewPostbackTemplateAction("14 日 撒迦利亞書 1:18-2:5","新眼光查經","聖經 撒迦利亞書 1:18-2:5"),
+				Bible_imageURL, "本週新眼光讀經", "2017/04/19～2017/04/21",
+				linebot.NewPostbackTemplateAction("19 日 撒迦利亞書 5:5-11","新眼光查經","聖經 撒迦利亞書 5:5-11"),
+				linebot.NewPostbackTemplateAction("20 日 撒迦利亞書 6:1-8","新眼光查經","聖經 撒迦利亞書 6:1-8"),
+				linebot.NewPostbackTemplateAction("21 日 撒迦利亞書 6:9-15","新眼光查經","聖經 撒迦利亞書 6:9-15"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/04/15",
-				linebot.NewPostbackTemplateAction("15 日 撒迦利亞書 2:6-13","新眼光查經","聖經 撒迦利亞書 2:6-13"),
+				Bible_imageURL, "本週新眼光讀經", "2017/04/22",
+				linebot.NewPostbackTemplateAction("22 日 撒迦利亞書 7:1-14","新眼光查經","聖經 撒迦利亞書 7:1-14"),
 				// linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewMessageTemplateAction("本季行事曆","行事曆"),
@@ -448,15 +440,15 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			//LineTemplate_CarouselColumn_feedback,
 		)
 		t_nextweek_read := `本週新眼光讀經
-2017 4/9 ~ 4/15
+2017 4/16 ~ 4/22
 
-9 日 哈該書 2:10-14
-10 日 哈該書 2:15-19
-11 日 哈該書 2:20-23
-12 日 撒迦利亞書 1:1-6
-13 日 撒迦利亞書 1:7-17
-14 日 撒迦利亞書 1:18-2:5
-15 日 撒迦利亞書 2:6-13` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
+16 日 撒迦利亞書 3:1-10
+17 日 撒迦利亞書 4:1-14
+18 日 撒迦利亞書 5:1-4
+19 日 撒迦利亞書 5:5-11
+20 日 撒迦利亞書 6:1-8
+21 日 撒迦利亞書 6:9-15
+22 日 撒迦利亞書 7:1-14` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
 		obj_message_nextweek_read := linebot.NewTemplateMessage(t_nextweek_read, LineTemplate_nextweek_read)
 
 		//正題
