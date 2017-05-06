@@ -416,20 +416,20 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 
 		LineTemplate_nextweek_read := linebot.NewCarouselTemplate(
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/04/30～2017/05/02",
-				linebot.NewPostbackTemplateAction("30 日 撒迦利亞書 12:1-14","新眼光查經","聖經 撒迦利亞書 12:1-14"),
-				linebot.NewPostbackTemplateAction("1 日 撒迦利亞書 13:1-9","新眼光查經","聖經 撒迦利亞書 13:1-9"),
-				linebot.NewPostbackTemplateAction("2 日 撒迦利亞書 14:1-21","新眼光查經","聖經 撒迦利亞書 14:1-21"),
+				Bible_imageURL, "本週新眼光讀經", "2017/05/07～2017/05/09",
+				linebot.NewPostbackTemplateAction("7 日 瑪拉基書 2:17-3:5","新眼光查經","聖經 瑪拉基書 2:17-3:5"),
+				linebot.NewPostbackTemplateAction("8 日 瑪拉基書 3:6-12","新眼光查經","聖經 瑪拉基書 3:6-12"),
+				linebot.NewPostbackTemplateAction("9 日 瑪拉基書 3:13-18","新眼光查經","聖經 瑪拉基書 3:13-18"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/05/03～2017/05/05",
-				linebot.NewPostbackTemplateAction("03 日 瑪拉基書 1:1-5","新眼光查經","聖經 瑪拉基書 1:1-5"),
-				linebot.NewPostbackTemplateAction("04 日 瑪拉基書 1:6-14","新眼光查經","聖經 瑪拉基書 1:6-14"),
-				linebot.NewPostbackTemplateAction("05 日 瑪拉基書 2:1-9","新眼光查經","聖經 瑪拉基書 2:1-9"),
+				Bible_imageURL, "本週新眼光讀經", "2017/05/10～2017/05/12",
+				linebot.NewPostbackTemplateAction("10 日 瑪拉基書 4:1-3","新眼光查經","聖經 瑪拉基書 4:1-3"),
+				linebot.NewPostbackTemplateAction("11 日 瑪拉基書 4:4-6","新眼光查經","聖經 瑪拉基書 4:4-6"),
+				linebot.NewPostbackTemplateAction("12 日 帖撒羅尼迦前書 1:1-10","新眼光查經","聖經 帖撒羅尼迦前書 1:1-10"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/05/06 ",
-				linebot.NewPostbackTemplateAction("06 日 瑪拉基書 2:10-16","新眼光查經","聖經 瑪拉基書 2:10-16"),
+				Bible_imageURL, "本週新眼光讀經", "2017/05/13 ",
+				linebot.NewPostbackTemplateAction("13 日 帖撒羅尼迦前書 2:1-9","新眼光查經","聖經 帖撒羅尼迦前書 2:1-9"),
 				// linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewMessageTemplateAction("本季行事曆","行事曆"),
@@ -452,15 +452,15 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			//LineTemplate_CarouselColumn_feedback,
 		)
 		t_nextweek_read := `本週新眼光讀經
-2017 4/30 ~ 5/06
+2017 5/7 ~ 5/13
 
-30 日 撒迦利亞書 12:1-14
-5 月 1 日 撒迦利亞書 13:1-9
-2 日 撒迦利亞書 14:1-21
-3 日 瑪拉基書 1:1-5
-4 日 瑪拉基書 1:6-14
-5 日 瑪拉基書 2:1-9
-6 日 瑪拉基書 2:10-16` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
+7 日 瑪拉基書 2:17-3:5
+8 日 瑪拉基書 3:6-12
+9 日 瑪拉基書 3:13-18
+10 日 瑪拉基書 4:1-3
+11 日 瑪拉基書 4:4-6
+12 日 帖撒羅尼迦前書 1:1-10
+13 日 帖撒羅尼迦前書 2:1-9` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
 		obj_message_nextweek_read := linebot.NewTemplateMessage(t_nextweek_read, LineTemplate_nextweek_read)
 
 		//正題
