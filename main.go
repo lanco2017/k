@@ -329,42 +329,24 @@ https://news.kkcpct.org
 						"社青團契：\n每週六 晚上07:00\n\n" +
 						"學青團契：\n每週六 晚上07:00"
 
-		next_week_msg := `本週主日預告（2017/04/23）
+		next_week_msg := `本週主日預告（2017/05/07）
 預定行事：
 
-※ 大眾傳播中心奉獻主日
-※ 王牧師前往深坑教會
-※ 下午3:00 吳慧馨牧師就任教育牧 師授職禮拜
+※ 青年事工紀念主日
+※ 定期長執會
+※ 上午11：00 社青團契大聚會
 
 ----
 
-台語禮拜：吳慧馨 牧師
-因你得福：加拉太書 3:5-12
-
-♪ 聖詩 ♪：646、394
-啟應文：第 63 篇 
-
-獻詩：松年團契 
-司禮：李致霖
-敬拜讚美團：雅歌（李麗珠）
-司獻：黃美俐、陳勝雄、黃全業
-司琴：簡清芬
-招待：周金花、趙明聰、張明雲
-音控：李武智
-輪值長老：李致霖、陳勝雄
-
-----
-
-華語禮拜：吳慧馨 牧師
-建造上帝國：撒迦利亞書 8:1-17
-
-♪：奔跑不放棄
-獻詩：松年團契
-
-司禮、敬拜讚美團、司獻、司琴：少年團契
+聯合禮拜：羅滋嶸 傳道
+服事下個世代：耶利米書 1:1-10
+♪：仰望向前走
+啟應文：第 1 篇 
+獻詩：學青少契詩班
+司禮、敬拜讚美團、司獻、司琴：青年
 音控：青少契
-招待：周金花、劉正國、吳祝慧
-輪值長老：李致霖、陳勝雄
+輪值長老：張正道、蔡貞慧
+獻花者：沙謝淑援
 
 ----
 
@@ -383,13 +365,13 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/04/30）的經文",
-				linebot.NewPostbackTemplateAction("台語禮拜 加拉太書 6:1-10","第一場預習","聖經 加拉太書 6:1-10"),
-				linebot.NewPostbackTemplateAction("華語禮拜 撒迦利亞書 12:1-14","第二場預習","ncv 撒迦利亞書 12:1-14"),
+				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/05/07）的經文",
+				linebot.NewPostbackTemplateAction("聯合禮拜 耶利米書 1:1-10","第一場預習","聖經 耶利米書 1:1-10"),
+// 				linebot.NewPostbackTemplateAction("華語禮拜 撒迦利亞書 12:1-14","第二場預習","ncv 撒迦利亞書 12:1-14"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 				// linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewPostbackTemplateAction("本週禮拜內容預告","下週預告 POST", "下週預告"),
-// 				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
+				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "聖經查詢方法", "以下是示範。\n也可以手動輸入試試看各種組合。",
