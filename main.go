@@ -263,12 +263,19 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		    		//obj_message_week_3 := linebot.NewImageMessage(ImageURL_week_3, ImageURL_week_3) //後面是預覽
 
 					family_focus_text := `下週家庭禮拜 2017/05/16（二）
-晚上八點於陳瑛瑛姊妹府上舉行孫子滿月禮拜。
-晚上 7:45 在捷運忠孝復興站四號出口集合前往。
+晚上八點於陳瑛瑛姊妹府上
+舉行孫子滿月禮拜。
 
-本會推動「家庭禮拜」，為家庭祝福禱告， 
-歡迎兄姊至公佈欄登記 2017 家庭禮拜日期。
-也可線上報名登記：http://blog.kkcpct.org/#contact`
+晚上 7:45 在捷運
+忠孝復興站四號出口集合前往。
+
+本會推動「家庭禮拜」，
+為家庭祝福禱告， 
+歡迎兄姊至公佈欄
+登記 2017 家庭禮拜日期。
+
+也可線上報名登記：
+http://blog.kkcpct.org/#contact`
 
 		LineTemplate_family_focus := linebot.NewCarouselTemplate(
 
@@ -401,8 +408,8 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 
 		LineTemplate_nextweek_read := linebot.NewCarouselTemplate(
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/05/07～2017/05/09",
-				linebot.NewPostbackTemplateAction("7 日 瑪拉基書 2:17-3:5","新眼光查經","聖經 瑪拉基書 2:17-3:5"),
+				Bible_imageURL, "本週新眼光讀經", "2017/05/14～2017/05/09",
+				linebot.NewPostbackTemplateAction("14 日 帖撒羅尼迦前書 2:10-12","新眼光查經","聖經 帖撒羅尼迦前書 2:10-12"),
 				linebot.NewPostbackTemplateAction("8 日 瑪拉基書 3:6-12","新眼光查經","聖經 瑪拉基書 3:6-12"),
 				linebot.NewPostbackTemplateAction("9 日 瑪拉基書 3:13-18","新眼光查經","聖經 瑪拉基書 3:13-18"),
 			),
