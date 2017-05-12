@@ -300,11 +300,11 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 
 					//this_week_text_1 :=`從缺，本週週報資料還沒送進來。`
 
-					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/590dbcad4bad29c25b9c13cb/f313243e75360f6f45f2e5742129e88e/20170507_index_mini.jpg"
+					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/591555e37a97ab2a1fc8fe57/f0acce3136bbeb51d7f690a60c57f7fd/20170514.index_mini.jpg"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
-					this_week_text_2 := `本週週報（2017/05/07）：
-https://s.kkcpct.org/2pgwBCk
+					this_week_text_2 := `本週週報（2017/05/14）：
+https://s.kkcpct.org/2pFeWVQ
 
 近期週報收藏區：
 https://week.kkcpct.org
