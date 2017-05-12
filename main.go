@@ -329,24 +329,27 @@ https://news.kkcpct.org
 						"社青團契：\n每週六 晚上07:00\n\n" +
 						"學青團契：\n每週六 晚上07:00"
 
-		next_week_msg := `本週主日預告（2017/05/07）
+		next_week_msg := `本週主日預告（2017/05/14）
 預定行事：
 
-※ 青年事工紀念主日
-※ 定期長執會
-※ 上午11：00 社青團契大聚會
+※ 慶祝母親節聯合禮拜
+※ 表揚服務10年以上的主日學老師
 
 ----
 
-聯合禮拜：羅滋嶸 傳道
-服事下個世代：耶利米書 1:1-10
-♪：仰望向前走
-啟應文：第 1 篇 
-獻詩：學青少契詩班
-司禮、敬拜讚美團、司獻、司琴：青年
-音控：青少契
+聯合禮拜：王豐榮 牧師
+聽媽媽的話：箴言 3:11-12、4:10-11
+
+♪：愛我們的家、388
+啟應文：第 30 篇 
+
+獻詩：兒童主日學
+司禮、司獻、司琴：兒童主日學
+敬拜讚美團：雅歌（黃淑慧）
+招待：周明正、葉承耀、林幸惠
+音控：李紹弘
 輪值長老：張正道、蔡貞慧
-獻花者：沙謝淑援
+獻花者：黃淑慧
 
 ----
 
@@ -365,13 +368,13 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/05/07）的經文",
-				linebot.NewPostbackTemplateAction("聯合禮拜 耶利米書 1:1-10","第一場預習","聖經 耶利米書 1:1-10"),
-// 				linebot.NewPostbackTemplateAction("華語禮拜 撒迦利亞書 12:1-14","第二場預習","ncv 撒迦利亞書 12:1-14"),
+				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/05/14）的經文",
+				linebot.NewPostbackTemplateAction("聯合禮拜 箴言 3:11-12","第一場預習","聖經 箴言 3:11-12"),
+				linebot.NewPostbackTemplateAction("聯合禮拜 箴言 4:10-11","第一場預習","聖經 箴言 4:10-11"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 				// linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
-				linebot.NewPostbackTemplateAction("本週禮拜內容預告","下週預告 POST", "下週預告"),
-				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
+				linebot.NewPostbackTemplateAction("本週禮拜內容預告","本週預告 POST", "本週預告"),
+// 				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "聖經查詢方法", "以下是示範。\n也可以手動輸入試試看各種組合。",
@@ -434,15 +437,15 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			//LineTemplate_CarouselColumn_feedback,
 		)
 		t_nextweek_read := `本週新眼光讀經
-2017 5/7 ~ 5/13
+2017 5/14 ~ 5/20
 
-7 日 瑪拉基書 2:17-3:5
-8 日 瑪拉基書 3:6-12
-9 日 瑪拉基書 3:13-18
-10 日 瑪拉基書 4:1-3
-11 日 瑪拉基書 4:4-6
-12 日 帖撒羅尼迦前書 1:1-10
-13 日 帖撒羅尼迦前書 2:1-9` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
+14 日 帖撒羅尼迦前書 2:10-12
+15 日 帖撒羅尼迦前書 2:13-16
+16 日 帖撒羅尼迦前書 2:17-20
+17 日 帖撒羅尼迦前書 3:1-5
+18 日 帖撒羅尼迦前書 3:6-13
+19 日 帖撒羅尼迦前書 4:1-8
+20 日 帖撒羅尼迦前書 4:9-12` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
 		obj_message_nextweek_read := linebot.NewTemplateMessage(t_nextweek_read, LineTemplate_nextweek_read)
 
 		//正題
