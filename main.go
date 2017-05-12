@@ -262,9 +262,9 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		    		//obj_message_week_2 := linebot.NewImageMessage(ImageURL_week_2, ImageURL_week_2) //後面是預覽
 		    		//obj_message_week_3 := linebot.NewImageMessage(ImageURL_week_3, ImageURL_week_3) //後面是預覽
 
-					family_focus_text := `下週家庭禮拜 2017/04/25（二）
-牧師與婦女團契前往鳳山教會觀摩，
-家庭禮拜暫停。  
+					family_focus_text := `下週家庭禮拜 2017/05/16（二）
+晚上八點於陳瑛瑛姊妹府上舉行孫子滿月禮拜。
+晚上 7:45 在捷運忠孝復興站四號出口集合前往。
 
 本會推動「家庭禮拜」，為家庭祝福禱告， 
 歡迎兄姊至公佈欄登記 2017 家庭禮拜日期。
@@ -273,10 +273,10 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		LineTemplate_family_focus := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				imageURL, "家庭禮拜","2017/04/25（二）暫停一次",
+				imageURL, "家庭禮拜","2017/05/16（二）晚上八點陳瑛瑛姊妹府上舉行孫子滿月禮拜",
 				// linebot.NewURITemplateAction("幫你播打電話", "tel:0800550880"),
 				//linebot.NewURITemplateAction("Google 地圖", "https://goo.gl/maps/fWophZAFGVL2"),
-				linebot.NewURITemplateAction("電話詢問交通資訊","tel:0229327941"),//.NewMessageTemplateAction
+				linebot.NewURITemplateAction("7:45 忠孝復興4號出口集合","tel:0229327941"),//.NewMessageTemplateAction
 				//linebot.NewURITemplateAction("詳細交通資訊", "http://www.kycare.com.tw/index.php/contacts/"),
 				linebot.NewPostbackTemplateAction("與教會聯絡","聯絡資訊 POST", "聯絡資訊"),
 				// linebot.NewPostbackTemplateAction("228 和平紀念日暫停一次","聯絡資訊 POST", "聯絡資訊"),
