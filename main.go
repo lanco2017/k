@@ -408,20 +408,20 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 
 		LineTemplate_nextweek_read := linebot.NewCarouselTemplate(
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/05/14～2017/05/09",
+				Bible_imageURL, "本週新眼光讀經", "2017/05/14～2017/05/16",
 				linebot.NewPostbackTemplateAction("14 日 帖撒羅尼迦前書 2:10-12","新眼光查經","聖經 帖撒羅尼迦前書 2:10-12"),
-				linebot.NewPostbackTemplateAction("8 日 瑪拉基書 3:6-12","新眼光查經","聖經 瑪拉基書 3:6-12"),
-				linebot.NewPostbackTemplateAction("9 日 瑪拉基書 3:13-18","新眼光查經","聖經 瑪拉基書 3:13-18"),
+				linebot.NewPostbackTemplateAction("15 日 帖撒羅尼迦前書 2:13-16","新眼光查經","聖經 帖撒羅尼迦前書 2:13-16"),
+				linebot.NewPostbackTemplateAction("16 日 帖撒羅尼迦前書 2:17-20","新眼光查經","聖經 帖撒羅尼迦前書 2:17-20"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/05/10～2017/05/12",
-				linebot.NewPostbackTemplateAction("10 日 瑪拉基書 4:1-3","新眼光查經","聖經 瑪拉基書 4:1-3"),
-				linebot.NewPostbackTemplateAction("11 日 瑪拉基書 4:4-6","新眼光查經","聖經 瑪拉基書 4:4-6"),
-				linebot.NewPostbackTemplateAction("12 日 帖撒羅尼迦前書 1:1-10","新眼光查經","聖經 帖撒羅尼迦前書 1:1-10"),
+				Bible_imageURL, "本週新眼光讀經", "2017/05/17～2017/05/19",
+				linebot.NewPostbackTemplateAction("17 日 帖撒羅尼迦前書 3:1-5","新眼光查經","聖經 帖撒羅尼迦前書 3:1-5"),
+				linebot.NewPostbackTemplateAction("18 日 帖撒羅尼迦前書 3:6-13","新眼光查經","聖經 帖撒羅尼迦前書 3:6-13"),
+				linebot.NewPostbackTemplateAction("19 日 帖撒羅尼迦前書 4:1-8","新眼光查經","聖經 帖撒羅尼迦前書 4:1-8"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/05/13 ",
-				linebot.NewPostbackTemplateAction("13 日 帖撒羅尼迦前書 2:1-9","新眼光查經","聖經 帖撒羅尼迦前書 2:1-9"),
+				Bible_imageURL, "本週新眼光讀經", "2017/05/20 ",
+				linebot.NewPostbackTemplateAction("20 日 帖撒羅尼迦前書 4:9-12","新眼光查經","聖經 帖撒羅尼迦前書 4:9-12"),
 				// linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewMessageTemplateAction("本季行事曆","行事曆"),
