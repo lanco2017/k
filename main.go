@@ -339,24 +339,32 @@ https://news.kkcpct.org
 		next_week_msg := `本週主日預告（2017/05/14）
 預定行事：
 
-※ 慶祝母親節聯合禮拜
-※ 表揚服務10年以上的主日學老師
+※ 玉山神學院奉獻主日
 
 ----
 
-聯合禮拜：王豐榮 牧師
-聽媽媽的話：箴言 3:11-12、4:10-11
+台語禮拜：葉景安 牧師
 
-♪：愛我們的家、388
-啟應文：第 30 篇 
-
-獻詩：兒童主日學
-司禮、司獻、司琴：兒童主日學
-敬拜讚美團：雅歌（黃淑慧）
-招待：周明正、葉承耀、林幸惠
-音控：李紹弘
+獻詩：聖歌隊
+司禮：陳宏恩
+敬拜讚美團：雅歌（李妍蓉）
+司獻：黃淑慧、李紹弘、葉承耀
+司琴：李敦華
+招待：蔡美麗、吳建平、陳秀月
+音控：林順智 
 輪值長老：張正道、蔡貞慧
-獻花者：黃淑慧
+獻花者：黃錦月
+
+----
+
+華語禮拜：葉景安 牧師
+
+獻詩：聖歌隊
+司禮、敬拜讚美團、司獻：詠恩敬拜讚美團 司琴：詠恩
+招待：蔡美麗、高春生、李美香
+音控：青少契
+輪值長老：張正道、蔡貞慧
+獻花者：黃錦月
 
 ----
 
@@ -375,13 +383,13 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/05/14）的經文",
-				linebot.NewPostbackTemplateAction("聯合禮拜 箴言 3:11-12","第一場預習","聖經 箴言 3:11-12"),
-				linebot.NewPostbackTemplateAction("聯合禮拜 箴言 4:10-11","第一場預習","聖經 箴言 4:10-11"),
+				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/05/21）的經文",
+// 				linebot.NewPostbackTemplateAction("聯合禮拜 箴言 3:11-12","第一場預習","聖經 箴言 3:11-12"),
+// 				linebot.NewPostbackTemplateAction("聯合禮拜 箴言 4:10-11","第一場預習","聖經 箴言 4:10-11"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
-				// linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
+				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewPostbackTemplateAction("本週禮拜內容預告","本週預告 POST", "本週預告"),
-// 				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
+				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "聖經查詢方法", "以下是示範。\n也可以手動輸入試試看各種組合。",
