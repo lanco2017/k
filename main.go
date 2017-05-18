@@ -388,7 +388,7 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 // 				linebot.NewPostbackTemplateAction("聯合禮拜 箴言 4:10-11","第一場預習","聖經 箴言 4:10-11"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
-				linebot.NewPostbackTemplateAction("本週禮拜內容預告","本週預告 POST", "本週預告"),
+				linebot.NewPostbackTemplateAction("本週禮拜內容預告","本週預告 POST", "下週預告"),
 				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
 			),
 			linebot.NewCarouselColumn(
