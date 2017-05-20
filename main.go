@@ -307,11 +307,11 @@ http://blog.kkcpct.org/#contact`
 
 					//this_week_text_1 :=`從缺，本週週報資料還沒送進來。`
 
-					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/591555e37a97ab2a1fc8fe57/f0acce3136bbeb51d7f690a60c57f7fd/20170514.index_mini.jpg"
+					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59208dd356ea4288bac49678/92af1b8061754853b8bf165a59f39af0/20170521.index_mini.jpg"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
 					this_week_text_2 := `本週週報（2017/05/14）：
-https://s.kkcpct.org/2pFeWVQ
+https://s.kkcpct.org/2r3CSXo
 
 近期週報收藏區：
 https://week.kkcpct.org
@@ -336,7 +336,7 @@ https://news.kkcpct.org
 						"社青團契：\n每週六 晚上07:00\n\n" +
 						"學青團契：\n每週六 晚上07:00"
 
-		next_week_msg := `本週主日預告（2017/05/14）
+		next_week_msg := `本週主日預告（2017/05/21）
 預定行事：
 
 ※ 玉山神學院奉獻主日
