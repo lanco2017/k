@@ -310,7 +310,7 @@ http://blog.kkcpct.org/#contact`
 					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59208dd356ea4288bac49678/92af1b8061754853b8bf165a59f39af0/20170521.index_mini.jpg"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
-					this_week_text_2 := `本週週報（2017/05/14）：
+					this_week_text_2 := `本週週報（2017/05/21）：
 https://s.kkcpct.org/2r3CSXo
 
 近期週報收藏區：
