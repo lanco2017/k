@@ -262,12 +262,11 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		    		//obj_message_week_2 := linebot.NewImageMessage(ImageURL_week_2, ImageURL_week_2) //後面是預覽
 		    		//obj_message_week_3 := linebot.NewImageMessage(ImageURL_week_3, ImageURL_week_3) //後面是預覽
 
-					family_focus_text := `下週家庭禮拜 2017/05/16（二）
-晚上八點於陳瑛瑛姊妹府上
-舉行孫子滿月禮拜。
+					family_focus_text := `下週家庭禮拜 2017/06/13（二）
+晚上八點在劉京竹姊妹家庭
 
-晚上 7:45 在捷運
-忠孝復興站四號出口集合前往。
+晚上 7：20 教會集合前往，
+需搭車者請向幹事登記方便安排車輛。 
 
 本會推動「家庭禮拜」，
 為家庭祝福禱告， 
@@ -280,12 +279,12 @@ http://blog.kkcpct.org/#contact`
 		LineTemplate_family_focus := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				imageURL, "家庭禮拜","2017/05/16（二）晚上八點陳瑛瑛姊妹府上舉行孫子滿月禮拜",
+				imageURL, "家庭禮拜","2017/06/13（二）晚上八點陳瑛瑛姊妹府上舉行孫子滿月禮拜",
 				// linebot.NewURITemplateAction("幫你播打電話", "tel:0800550880"),
 				//linebot.NewURITemplateAction("Google 地圖", "https://goo.gl/maps/fWophZAFGVL2"),
-				linebot.NewURITemplateAction("7:45 忠孝復興4號出口集合","tel:0229327941"),//.NewMessageTemplateAction
+				linebot.NewURITemplateAction("晚上 7：20 教會集合前往","tel:0229327941"),//.NewMessageTemplateAction
 				//linebot.NewURITemplateAction("詳細交通資訊", "http://www.kycare.com.tw/index.php/contacts/"),
-				linebot.NewPostbackTemplateAction("與教會聯絡","聯絡資訊 POST", "聯絡資訊"),
+				linebot.NewPostbackTemplateAction("搭車者聯絡登記","聯絡資訊 POST", "聯絡資訊"),
 				// linebot.NewPostbackTemplateAction("228 和平紀念日暫停一次","聯絡資訊 POST", "聯絡資訊"),
 				// linebot.NewPostbackTemplateAction("228 和平紀念日暫停一次","聯絡資訊 POST", "聯絡資訊"),
 				linebot.NewURITemplateAction("報名家庭禮拜","http://blog.kkcpct.org/#contact"),
@@ -336,40 +335,40 @@ https://news.kkcpct.org
 						"社青團契：\n每週六 晚上07:00\n\n" +
 						"學青團契：\n每週六 晚上07:00"
 
-		next_week_msg := `本週主日預告（2017/05/30）
+		next_week_msg := `本週主日預告（2017/06/11）
 預定行事：
 
-※ 星中開拓新教會奉獻主日
+※ 松大畢業典禮
+※ 關懷亞洲紀念主日
+※ 第三季事工協調會
 
 ----
 
-台語禮拜：王豐榮 牧師
-同心合意的禱告：馬太福音 18:18-20
+台語禮拜：阮介民 牧師
 
-♪：348、389
-啟應文：第 31 篇 
+獻詩：松大長青詩班
+司禮：陳伸賢
+敬拜讚美團：雅歌（李麗珠）
+司獻：陳基昌、李妍蓉、陳嘉崇
+司琴：林順智
+招待：白壽雄、郭敏敏、馬韻嫻
+音控：蘇昱儒 
 
-獻詩：社青詩班
-司禮：李麗珠
-敬拜讚美團：雅歌（黃美俐）
-司獻：蔡貞慧、謝豐全、黃淑慧
-司琴：李悅蓉
-招待：施宏政、張明里、歐添發
-音控：李武智 
-輪值長老：張正道、蔡貞慧
-獻花者：林碧雲
+輪值長老：陳琇玲、謝豐全
+獻花者：林郁慧
 
 ----
-
 華語禮拜：羅滋嶸 傳道
 
-同心合一
-獻詩：社青詩班 
-司禮、敬拜讚美團、司獻、司琴：學青團契
-招待：施宏政、葉郁賢
+與祢同行
+
+獻詩：松大長青詩班 
+司禮、敬拜讚美團、司獻、司琴：少年團契
+招待：白壽雄 、黃文淵
 音控：青少契
-輪值長老：張正道、蔡貞慧
-獻花者：林碧雲
+
+輪值長老：陳琇玲、謝豐全
+獻花者：林郁慧
 
 ----
 
@@ -388,7 +387,7 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/05/30）的經文",
+				Bible_imageURL, "主日禮拜經文預習", "以下是上週（2017/05/30）的經文",
  				linebot.NewPostbackTemplateAction("台語禮拜 馬太福音 18:18-20","第一場預習","聖經 馬太福音 18:18-20"),
 //  				linebot.NewPostbackTemplateAction("華語禮拜 箴言 4:10-11","第一場預習","聖經 箴言 4:10-11"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
@@ -421,23 +420,25 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 
 		LineTemplate_nextweek_read := linebot.NewCarouselTemplate(
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/05/14～2017/05/16",
-				linebot.NewPostbackTemplateAction("14 日 帖撒羅尼迦前書 2:10-12","新眼光查經","聖經 帖撒羅尼迦前書 2:10-12"),
-				linebot.NewPostbackTemplateAction("15 日 帖撒羅尼迦前書 2:13-16","新眼光查經","聖經 帖撒羅尼迦前書 2:13-16"),
-				linebot.NewPostbackTemplateAction("16 日 帖撒羅尼迦前書 2:17-20","新眼光查經","聖經 帖撒羅尼迦前書 2:17-20"),
+				Bible_imageURL, "本週新眼光讀經", "2017/06/11～2017/06/13",
+				linebot.NewPostbackTemplateAction("11 日 歷代志上 13:1-14","新眼光查經","聖經 歷代志上 13:1-14"),
+				linebot.NewPostbackTemplateAction("12 日 歷代志上 14:1-17","新眼光查經","聖經 歷代志上 14:1-17"),
+				linebot.NewPostbackTemplateAction("13 日 歷代志上 15:1-29","新眼光查經","聖經 歷代志上 15:1-29"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/05/17～2017/05/19",
-				linebot.NewPostbackTemplateAction("17 日 帖撒羅尼迦前書 3:1-5","新眼光查經","聖經 帖撒羅尼迦前書 3:1-5"),
-				linebot.NewPostbackTemplateAction("18 日 帖撒羅尼迦前書 3:6-13","新眼光查經","聖經 帖撒羅尼迦前書 3:6-13"),
-				linebot.NewPostbackTemplateAction("19 日 帖撒羅尼迦前書 4:1-8","新眼光查經","聖經 帖撒羅尼迦前書 4:1-8"),
+				Bible_imageURL, "本週新眼光讀經", "2017/06/13～2017/06/15",
+				linebot.NewPostbackTemplateAction("13 日 歷代志上 16:1-7","新眼光查經","聖經 歷代志上 16:1-7"),
+				linebot.NewPostbackTemplateAction("14 日 歷代志上 16:8-36","新眼光查經","聖經 歷代志上 16:8-36"),
+				linebot.NewPostbackTemplateAction("15 日 歷代志上 16:37-43","新眼光查經","聖經 歷代志上 16:37-43"),
+
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/05/20 ",
-				linebot.NewPostbackTemplateAction("20 日 帖撒羅尼迦前書 4:9-12","新眼光查經","聖經 帖撒羅尼迦前書 4:9-12"),
+				Bible_imageURL, "本週新眼光讀經", "2017/06/16～2017/06/17 ",
+				linebot.NewPostbackTemplateAction("16 日 歷代志上 17:1-15","新眼光查經","聖經 歷代志上 17:1-15"),
+				linebot.NewPostbackTemplateAction("17 日 歷代志上 17:16-27","新眼光查經","聖經 歷代志上 17:16-27"),
 				// linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
-				linebot.NewMessageTemplateAction("本季行事曆","行事曆"),
+// 				linebot.NewMessageTemplateAction("本季行事曆","行事曆"),
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "聖經查詢方法", "以下是示範。\n也可以手動輸入試試看各種組合。",
@@ -457,15 +458,15 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			//LineTemplate_CarouselColumn_feedback,
 		)
 		t_nextweek_read := `本週新眼光讀經
-2017 5/14 ~ 5/20
+2017/6/11 ~ 6/17
 
-14 日 帖撒羅尼迦前書 2:10-12
-15 日 帖撒羅尼迦前書 2:13-16
-16 日 帖撒羅尼迦前書 2:17-20
-17 日 帖撒羅尼迦前書 3:1-5
-18 日 帖撒羅尼迦前書 3:6-13
-19 日 帖撒羅尼迦前書 4:1-8
-20 日 帖撒羅尼迦前書 4:9-12` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
+11 日 歷代志上 13:1-14
+12 日 歷代志上 14:1-17
+13 日 歷代志上 15:1-16:7
+14 日 歷代志上 16:8-36
+15 日 歷代志上 16:37-43
+16 日 歷代志上 17:1-15
+17 日 歷代志上 17:16-27` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
 		obj_message_nextweek_read := linebot.NewTemplateMessage(t_nextweek_read, LineTemplate_nextweek_read)
 
 		//正題
