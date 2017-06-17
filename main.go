@@ -315,6 +315,9 @@ https://s.kkcpct.org/2sn5NDz
 近期週報收藏區：
 https://week.kkcpct.org
 
+教會影音匯集：
+http://media.kkcpct.org
+
 歡迎使用電子郵件訂閱週報：
 https://news.kkcpct.org
 
