@@ -414,22 +414,22 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 
 		LineTemplate_nextweek_read := linebot.NewCarouselTemplate(
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/06/11～2017/06/13",
-				linebot.NewPostbackTemplateAction("11 日 歷代志上 13:1-14","新眼光查經","聖經 歷代志上 13:1-14"),
-				linebot.NewPostbackTemplateAction("12 日 歷代志上 14:1-17","新眼光查經","聖經 歷代志上 14:1-17"),
-				linebot.NewPostbackTemplateAction("13 日 歷代志上 15:1-29","新眼光查經","聖經 歷代志上 15:1-29"),
+				Bible_imageURL, "本週新眼光讀經", "2017/06/18～2017/06/20",
+				linebot.NewPostbackTemplateAction("18 日 歷代志上 18:1-17","新眼光查經","聖經 歷代志上 18:1-17"),
+				linebot.NewPostbackTemplateAction("19 日 歷代志上 18:1-17","新眼光查經","聖經 歷代志上 18:1-17"),
+				linebot.NewPostbackTemplateAction("20 日 歷代志上 20:1-8","新眼光查經","聖經 歷代志上 20:1-8"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/06/13～2017/06/15",
-				linebot.NewPostbackTemplateAction("13 日 歷代志上 16:1-7","新眼光查經","聖經 歷代志上 16:1-7"),
-				linebot.NewPostbackTemplateAction("14 日 歷代志上 16:8-36","新眼光查經","聖經 歷代志上 16:8-36"),
-				linebot.NewPostbackTemplateAction("15 日 歷代志上 16:37-43","新眼光查經","聖經 歷代志上 16:37-43"),
+				Bible_imageURL, "本週新眼光讀經", "2017/06/21～2017/06/22",
+				linebot.NewPostbackTemplateAction("21 日 歷代志上 21:1-30","新眼光查經","聖經 歷代志上 21:1-30"),
+				linebot.NewPostbackTemplateAction("22 日 歷代志上 22:1-19","新眼光查經","聖經 歷代志上 22:1-19"),
+				linebot.NewPostbackTemplateAction("22 日 歷代志上 23:1","新眼光查經","聖經 歷代志上 23:1"),
 
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/06/16～2017/06/17 ",
-				linebot.NewPostbackTemplateAction("16 日 歷代志上 17:1-15","新眼光查經","聖經 歷代志上 17:1-15"),
-				linebot.NewPostbackTemplateAction("17 日 歷代志上 17:16-27","新眼光查經","聖經 歷代志上 17:16-27"),
+				Bible_imageURL, "本週新眼光讀經", "2017/06/23～2017/06/24",
+				linebot.NewPostbackTemplateAction("23 日 歷代志上 23:2-32","新眼光查經","聖經 歷代志上 23:2-32"),
+				linebot.NewPostbackTemplateAction("24 日 歷代志上 24:1-31","新眼光查經","聖經 歷代志上 24:1-31"),
 				// linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 // 				linebot.NewMessageTemplateAction("本季行事曆","行事曆"),
@@ -452,15 +452,15 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			//LineTemplate_CarouselColumn_feedback,
 		)
 		t_nextweek_read := `本週新眼光讀經
-2017/6/11 ~ 6/17
+2017/6/18 ~ 6/24
 
-11 日 歷代志上 13:1-14
-12 日 歷代志上 14:1-17
-13 日 歷代志上 15:1-16:7
-14 日 歷代志上 16:8-36
-15 日 歷代志上 16:37-43
-16 日 歷代志上 17:1-15
-17 日 歷代志上 17:16-27` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
+18 日 歷代志上 18:1-17
+19 日 歷代志上 19:1-19
+20 日 歷代志上 20:1-8
+21 日 歷代志上 21:1-30
+22 日 歷代志上 22:1-23:1
+23 日 歷代志上 23:2-32
+24 日 歷代志上 24:1-31` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
 		obj_message_nextweek_read := linebot.NewTemplateMessage(t_nextweek_read, LineTemplate_nextweek_read)
 
 		//正題
