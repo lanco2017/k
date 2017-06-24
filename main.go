@@ -384,11 +384,11 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是上週（2017/05/30）的經文",
- 				linebot.NewPostbackTemplateAction("台語禮拜 馬太福音 18:18-20","第一場預習","聖經 馬太福音 18:18-20"),
-//  				linebot.NewPostbackTemplateAction("華語禮拜 箴言 4:10-11","第一場預習","聖經 箴言 4:10-11"),
+				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/06/25）的經文",
+ 				linebot.NewPostbackTemplateAction("台語禮拜 羅馬書 8:26-30","第一場預習","聖經 羅馬書 8:26-30"),
+ 				linebot.NewPostbackTemplateAction("華語禮拜 歷代志上 25:1-3","第一場預習","聖經 歷代志上 25:1-3"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
-				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
+// 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewPostbackTemplateAction("本週禮拜內容預告","本週預告 POST", "下週預告"),
 // 				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
 			),
