@@ -262,8 +262,8 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		    		//obj_message_week_2 := linebot.NewImageMessage(ImageURL_week_2, ImageURL_week_2) //後面是預覽
 		    		//obj_message_week_3 := linebot.NewImageMessage(ImageURL_week_3, ImageURL_week_3) //後面是預覽
 
-					family_focus_text := `下週家庭禮拜 2017/0713（二）
-晚上八點在劉京竹姊妹家庭
+					family_focus_text := `下週家庭禮拜 2017/07/04（二）
+晚上八點於 李致霖長老家庭。
 
 晚上 7：20 教會集合前往，
 需搭車者請向幹事登記方便安排車輛。 
@@ -279,7 +279,7 @@ http://blog.kkcpct.org/#contact`
 		LineTemplate_family_focus := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				imageURL, "家庭禮拜","2017/06/13（二）晚上八點陳瑛瑛姊妹府上舉行孫子滿月禮拜",
+				imageURL, "家庭禮拜","2017/07/04（二）晚上八點於 李致霖長老家庭",
 				// linebot.NewURITemplateAction("幫你播打電話", "tel:0800550880"),
 				//linebot.NewURITemplateAction("Google 地圖", "https://goo.gl/maps/fWophZAFGVL2"),
 				linebot.NewURITemplateAction("晚上 7：20 教會集合前往","tel:0229327941"),//.NewMessageTemplateAction
