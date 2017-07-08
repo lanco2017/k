@@ -462,15 +462,15 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			//LineTemplate_CarouselColumn_feedback,
 		)
 		t_nextweek_read := `本週新眼光讀經
-2017/7/2 ~ 7/8
+2017/7/9 ~ 7/15
 
-2 日 歷代志下 1:13-17
-3 日 歷代志下 2:1-18
-4 日 歷代志下 3:1-17
-5 日 歷代志下 4:1-5:1
-6 日 歷代志下 5:2-14
-7 日 歷代志下 6:1-11
-8 日 歷代志下 6:12-35` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
+9 日 歷代志下 6:36-42
+10 日 歷代志下 7:1-10
+11 日 歷代志下 7:11-22
+12 日 歷代志下 8:1-18
+13 日 歷代志下 9:1-12
+14 日 歷代志下 9:13-31
+15 日 歷代志下 10:1-19` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
 		obj_message_nextweek_read := linebot.NewTemplateMessage(t_nextweek_read, LineTemplate_nextweek_read)
 
 		//正題
