@@ -306,11 +306,11 @@ http://blog.kkcpct.org/#contact`
 
 					//this_week_text_1 :=`從缺，本週週報資料還沒送進來。`
 
-					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59565eead216aa9e20155049/ba26e160c254959f979bb7728996cc9d/index20170702.jpg"
+					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59614501ca5179ef8487708a/4900e3bd39dd216b701a4ce748998c8b/20170709.m.jpg"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
-					this_week_text_2 := `本週週報（2017/06/25）：
-https://s.kkcpct.org/2ucC8h4
+					this_week_text_2 := `本週週報（2017/07/09）：
+https://s.kkcpct.org/2ttSVOe
 
 近期週報收藏區：
 https://week.kkcpct.org
