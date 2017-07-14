@@ -391,9 +391,9 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/07/02）的經文",
- 				linebot.NewPostbackTemplateAction("台語禮拜 撒母耳記上 30:1-31","第一場預習","聖經 撒母耳記上 30:1-31"),
- 				linebot.NewPostbackTemplateAction("華語禮拜 撒母耳記上 30:1-31","第一場預習","聖經 撒母耳記上 30:1-31"),
+				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/07/16）的經文",
+ 				linebot.NewPostbackTemplateAction("台語禮拜 出埃及記 17:8-13","第一場預習","聖經 出埃及記 17:8-13"),
+ 				linebot.NewPostbackTemplateAction("華語禮拜 馬太福音 13:18-23","第一場預習","聖經 馬太福音 13:18-23"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 // 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewPostbackTemplateAction("本週禮拜內容預告","本週預告 POST", "下週預告"),
@@ -424,21 +424,21 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 
 		LineTemplate_nextweek_read := linebot.NewCarouselTemplate(
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/07/02～2017/07/04",
-				linebot.NewPostbackTemplateAction("2 日 歷代志下 1:13-17","新眼光查經","聖經 歷代志下 1:13-17"),
-				linebot.NewPostbackTemplateAction("3 日 歷代志下 2:1-18","新眼光查經","聖經 歷代志下 2:1-18"),
-				linebot.NewPostbackTemplateAction("4 日 歷代志下 3:1-17","新眼光查經","聖經 歷代志下 3:1-17"),
+				Bible_imageURL, "本週新眼光讀經", "2017/07/16～2017/07/18",
+				linebot.NewPostbackTemplateAction("16 日 歷代志下 11:1-23","新眼光查經","聖經 歷代志下 11:1-23"),
+				linebot.NewPostbackTemplateAction("17 日 歷代志下 12:1-16","新眼光查經","聖經 歷代志下 12:1-16"),
+				linebot.NewPostbackTemplateAction("18 日 歷代志下 13:1-22","新眼光查經","聖經 歷代志下 13:1-22"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/07/05～2017/07/07",
-				linebot.NewPostbackTemplateAction("5日 歷代志下 4:1-5:1","新眼光查經","聖經 歷代志下 4:1-5:1"),
-				linebot.NewPostbackTemplateAction("6日 歷代志下 5:2-14","新眼光查經","聖經 歷代志下 5:2-14"),
-				linebot.NewPostbackTemplateAction("7日 歷代志下 6:1-11","新眼光查經","聖經 歷代志下 6:1-11"),
+				Bible_imageURL, "本週新眼光讀經", "2017/07/19～2017/07/21",
+				linebot.NewPostbackTemplateAction("19日 歷代志下 14:1-15","新眼光查經","聖經 歷代志下 14:1-15"),
+				linebot.NewPostbackTemplateAction("20日 歷代志下 15:1-19","新眼光查經","聖經 歷代志下 15:1-19"),
+				linebot.NewPostbackTemplateAction("21日 歷代志下 16:1-14","新眼光查經","聖經 歷代志下 16:1-14"),
 
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/07/08",
-				linebot.NewPostbackTemplateAction("8日 歷代志下 6:12-35","新眼光查經","聖經 歷代志下 6:12-35"),
+				Bible_imageURL, "本週新眼光讀經", "2017/07/22",
+				linebot.NewPostbackTemplateAction("22日 歷代志下 17:1-19","新眼光查經","聖經 歷代志下 17:1-19"),
 // 				linebot.NewPostbackTemplateAction("24 日 歷代志上 24:1-31","新眼光查經","聖經 歷代志上 24:1-31"),
 				// linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
@@ -462,15 +462,15 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			//LineTemplate_CarouselColumn_feedback,
 		)
 		t_nextweek_read := `本週新眼光讀經
-2017/7/9 ~ 7/15
+2017 7/16 ~ 7/22
 
-9 日 歷代志下 6:36-42
-10 日 歷代志下 7:1-10
-11 日 歷代志下 7:11-22
-12 日 歷代志下 8:1-18
-13 日 歷代志下 9:1-12
-14 日 歷代志下 9:13-31
-15 日 歷代志下 10:1-19` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
+16 日 歷代志下 11:1-23
+17 日 歷代志下 12:1-16
+18 日 歷代志下 13:1-22
+19 日 歷代志下 14:1-15
+20 日 歷代志下 15:1-19
+21 日 歷代志下 16:1-14
+22 日 歷代志下 17:1-19` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
 		obj_message_nextweek_read := linebot.NewTemplateMessage(t_nextweek_read, LineTemplate_nextweek_read)
 
 		//正題
