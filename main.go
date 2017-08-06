@@ -306,11 +306,11 @@ http://blog.kkcpct.org/#contact`
 
 					//this_week_text_1 :=`從缺，本週週報資料還沒送進來。`
 
-					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/597cbb6bb89ac3ea43dd6bd5/942b89661a2b0383850d126a3e8081ba/2017.07.30.index.m.jpg"
+					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59865ca35da53794d5ee32c8/293035a6dc0410a5d1048dad259f5592/20170806.index_mini.jpg"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
-					this_week_text_2 := `本週週報（2017/07/30）：
-https://s.kkcpct.org/2uMw13J
+					this_week_text_2 := `本週週報（2017/08/06）：
+https://s.kkcpct.org/2ueGCHp
 
 近期週報收藏區：
 https://week.kkcpct.org
@@ -338,7 +338,7 @@ https://news.kkcpct.org
 						"社青團契：\n每週六 晚上07:00\n\n" +
 						"學青團契：\n每週六 晚上07:00"
 
-		next_week_msg := `本週主日預告（2017/07/30）
+		next_week_msg := `本週主日預告（2017/08/06）
 預定行事：
 ※ 全教會關懷小組聚會
 
