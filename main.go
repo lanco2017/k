@@ -340,26 +340,37 @@ https://news.kkcpct.org
 
 		next_week_msg := `本週主日預告（2017/08/13）
 預定行事：
-※ 慶祝父親節聯合禮拜
-※ 社青團契大聚會
-※ 聖樂紀念主日
+※ 幸福家庭主日
 
 ----
 
-聯合禮拜：王豐榮 牧師
-天父的愛：詩篇 86:1-7、13-17
+台語禮拜：王豐榮 牧師
+從追求永生到愛鄰舍：路加福音 10:25-37
 
-♪：活出愛、397
-啟應文：第 38 篇 
+♪：31、398
+啟應文：第 39 篇
 
-獻詩：兒童主日學
-司禮：李君振
-敬拜讚美團：雅歌（黃淑慧）
-司獻：陳基昌、陳嘉崇、李妍蓉
-司琴：李欣怡
-招待：梁靜珍、葉麗卿、李美珠
-音控：李武智 
+獻詩：聖歌隊
+司禮：陳宏恩
+敬拜讚美團：雅歌（李妍蓉）
+司獻：蔡貞慧、謝豐全、陳勝雄
+司琴：林順智
+招待：黃文輝、陳勝彥、吳欽英
+音控：李紹弘 
 輪值長老：陳宏恩、葉承耀
+獻花者：張凌峰、張禮贇
+
+----
+
+華語禮拜：羅滋嶸 傳道
+使家庭更好，從我開始
+
+獻詩：聖歌隊
+司禮、敬拜讚美團、司獻、司琴：少年團契 
+招待：黃文輝、葉承耀、林幸惠
+音控：青少契
+輪值長老：陳宏恩、葉承耀
+獻花者：張凌峰、張禮贇
 
 ----
 
@@ -378,13 +389,13 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/08/06）的經文",
- 				linebot.NewPostbackTemplateAction("聯合禮拜 詩篇 86:1-7","第一場預習","聖經 詩篇 86:1-7"),
- 				linebot.NewPostbackTemplateAction("聯合禮拜 詩篇 86:13-17","第一場預習","聖經 詩篇 86:13-17"),
+				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/08/13）的經文",
+ 				linebot.NewPostbackTemplateAction("台語禮拜 路加福音 10:25-37","第一場預習","聖經 路加福音 10:25-37"),
+// 				linebot.NewPostbackTemplateAction("華語禮拜 詩篇 86:13-17","第一場預習","聖經 詩篇 86:13-17"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 // 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
 				linebot.NewPostbackTemplateAction("本週禮拜內容預告","本週預告 POST", "下週預告"),
-// 				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
+ 				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "聖經查詢方法", "以下是示範。\n也可以手動輸入試試看各種組合。",
@@ -411,21 +422,21 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 
 		LineTemplate_nextweek_read := linebot.NewCarouselTemplate(
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/07/16～2017/07/18",
-				linebot.NewPostbackTemplateAction("16 日 歷代志下 11:1-23","新眼光查經","聖經 歷代志下 11:1-23"),
-				linebot.NewPostbackTemplateAction("17 日 歷代志下 12:1-16","新眼光查經","聖經 歷代志下 12:1-16"),
-				linebot.NewPostbackTemplateAction("18 日 歷代志下 13:1-22","新眼光查經","聖經 歷代志下 13:1-22"),
+				Bible_imageURL, "本週新眼光讀經", "2017/08/13～2017/08/15",
+				linebot.NewPostbackTemplateAction("13 日 歷代志下 28:16-21","新眼光查經","聖經 歷代志下 28:16-21"),
+				linebot.NewPostbackTemplateAction("14 日 歷代志下 28:22-27","新眼光查經","聖經 歷代志下 28:22-27"),
+				linebot.NewPostbackTemplateAction("15 日 歷代志下 29:1-11","新眼光查經","聖經 歷代志下 29:1-11"),
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/07/19～2017/07/21",
-				linebot.NewPostbackTemplateAction("19日 歷代志下 14:1-15","新眼光查經","聖經 歷代志下 14:1-15"),
-				linebot.NewPostbackTemplateAction("20日 歷代志下 15:1-19","新眼光查經","聖經 歷代志下 15:1-19"),
-				linebot.NewPostbackTemplateAction("21日 歷代志下 16:1-14","新眼光查經","聖經 歷代志下 16:1-14"),
+				Bible_imageURL, "本週新眼光讀經", "2017/08/16～2017/08/18",
+				linebot.NewPostbackTemplateAction("16日 歷代志下 29:12-17","新眼光查經","聖經 歷代志下 29:12-17"),
+				linebot.NewPostbackTemplateAction("17日 歷代志下 29:18-36","新眼光查經","聖經 歷代志下 29:18-36"),
+				linebot.NewPostbackTemplateAction("18日 歷代志下 30:1-12","新眼光查經","聖經 歷代志下 30:1-12"),
 
 			),
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "本週新眼光讀經", "2017/07/22",
-				linebot.NewPostbackTemplateAction("22日 歷代志下 17:1-19","新眼光查經","聖經 歷代志下 17:1-19"),
+				Bible_imageURL, "本週新眼光讀經", "2017/07/19",
+				linebot.NewPostbackTemplateAction("19日 歷代志下 30:13-27","新眼光查經","聖經 歷代志下 30:13-27"),
 // 				linebot.NewPostbackTemplateAction("24 日 歷代志上 24:1-31","新眼光查經","聖經 歷代志上 24:1-31"),
 				// linebot.NewPostbackTemplateAction("25 日 阿摩司書 9:11-15","新眼光查經","聖經 阿摩司書 9:11-15"),
 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
@@ -448,16 +459,16 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 			// LineTemplate_other,
 			//LineTemplate_CarouselColumn_feedback,
 		)
-		t_nextweek_read := `本週新眼光讀經
-2017 7/16 ~ 7/22
+		t_nextweek_read := `本週新眼光靈修進度經文
+2017 8/13 ~ 8/19
 
-16 日 歷代志下 11:1-23
-17 日 歷代志下 12:1-16
-18 日 歷代志下 13:1-22
-19 日 歷代志下 14:1-15
-20 日 歷代志下 15:1-19
-21 日 歷代志下 16:1-14
-22 日 歷代志下 17:1-19` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
+13 日 歷代志下 28:16-21
+14 日 歷代志下 28:22-27
+15 日 歷代志下 29:1-11
+16 日 歷代志下 29:12-17
+17 日 歷代志下 29:18-36
+18 日 歷代志下 30:1-12
+19 日 歷代志下 30:13-27` + "\n\n提示：\n這部分在最新版本 LINE APP 會以預習經文按鈕呈現，\n可幫助會眾快速熟悉經文。"
 		obj_message_nextweek_read := linebot.NewTemplateMessage(t_nextweek_read, LineTemplate_nextweek_read)
 
 		//正題
