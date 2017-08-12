@@ -306,11 +306,11 @@ http://blog.kkcpct.org/#contact`
 
 					//this_week_text_1 :=`從缺，本週週報資料還沒送進來。`
 
-					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59865ca35da53794d5ee32c8/293035a6dc0410a5d1048dad259f5592/20170806.index_mini.jpg"
+					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/598f4a04ff8415daaedf58de/ce0c9e6a9051f3b3d7c32b2a6f8a3731/20170813_index_mini.jpg"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
-					this_week_text_2 := `本週週報（2017/08/06）：
-https://s.kkcpct.org/2ueGCHp
+					this_week_text_2 := `本週週報（2017/08/13）：
+https://s.kkcpct.org/2vPps3d
 
 近期週報收藏區：
 https://week.kkcpct.org
@@ -338,7 +338,7 @@ https://news.kkcpct.org
 						"社青團契：\n每週六 晚上07:00\n\n" +
 						"學青團契：\n每週六 晚上07:00"
 
-		next_week_msg := `本週主日預告（2017/08/06）
+		next_week_msg := `本週主日預告（2017/08/13）
 預定行事：
 ※ 慶祝父親節聯合禮拜
 ※ 社青團契大聚會
