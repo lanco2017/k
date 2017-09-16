@@ -309,8 +309,8 @@ http://blog.kkcpct.org/#contact`
 					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59aafe4f341bd4e4fd52a89a/7a4e4c75c5cef1129b30557ef2676e1e/0903%E9%80%B1%E5%A0%B1%E9%A0%81%E5%B0%81%E9%9D%A2.jpg"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
-					this_week_text_2 := `本週週報（2017/09/03）：
-https://s.kkcpct.org/2xGTC74
+					this_week_text_2 := `本週週報（2017/09/17）：
+https://s.kkcpct.org/2f2WAL2
 
 近期週報收藏區：
 https://week.kkcpct.org
@@ -378,14 +378,14 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/08/27）的經文",
- 				linebot.NewPostbackTemplateAction("聯合禮拜 提摩太前書 4:6-15","第一場預習","聖經 提摩太前書 4:6-15"),
-//  				linebot.NewPostbackTemplateAction("台語禮拜 馬太福音 15:21-28","第一場預習","聖經 馬太福音 15:21-28"),
-// 				linebot.NewPostbackTemplateAction("華語禮拜 詩篇 86:13-17","第一場預習","聖經 詩篇 86:13-17"),
+				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/09/17）的經文",
+//  				linebot.NewPostbackTemplateAction("聯合禮拜 提摩太前書 4:6-15","第一場預習","聖經 提摩太前書 4:6-15"),
+ 				linebot.NewPostbackTemplateAction("台語禮拜 馬可福音 12:28-34","第一場預習","聖經 馬可福音 12:28-34"),
+				linebot.NewPostbackTemplateAction("華語禮拜 馬太福音 18:21-35","第一場預習","聖經 馬太福音 18:21-35"),
 				// linebot.NewPostbackTemplateAction("上週華語禮拜 行在水面上","第二場預習","行在水面上"),
 // 				linebot.NewMessageTemplateAction("瞭解聖經查詢方法","聖經"),
  				linebot.NewPostbackTemplateAction("本週禮拜內容預告","本週預告 POST", "下週預告"),
- 				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
+//  				linebot.NewPostbackTemplateAction("本週新眼光","新眼光 POST", "新眼光"),
 			),
 			linebot.NewCarouselColumn(
 				Bible_imageURL, "聖經查詢方法", "以下是示範。\n也可以手動輸入試試看各種組合。",
