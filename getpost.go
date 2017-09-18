@@ -69,6 +69,7 @@ func HttpGET_(url string) string {
 	return string(rebody) //return err
 }
 
+//**************************************************************
 func HttpPost_JSON(mode, jsonStr, url  string) string {
 	log.Print("已經進來 any_JSON POST by " + mode)
 
