@@ -378,7 +378,7 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 		LineTemplate_nextweek_review := linebot.NewCarouselTemplate(
 
 			linebot.NewCarouselColumn(
-				Bible_imageURL, "主日禮拜經文預習", "以下是本週（2017/09/24）的經文",
+				Bible_imageURL, "主日禮拜經文預習", "以下是上週（2017/09/24）的經文",
 //  				linebot.NewPostbackTemplateAction("聯合禮拜 提摩太前書 4:6-15","第一場預習","聖經 提摩太前書 4:6-15"),
  				linebot.NewPostbackTemplateAction("台語禮拜 信仰中的驚喜","第一場預習","聖經 出埃及記 33:18-23"),
 				// linebot.NewPostbackTemplateAction("華語禮拜 馬太福音 18:21-35","第一場預習","聖經 馬太福音 18:21-35"),
