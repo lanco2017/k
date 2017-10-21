@@ -310,7 +310,7 @@ http://blog.kkcpct.org/#contact`
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
 					this_week_text_2 := `本週週報（2017/10/22）：
-https://s.kkcpct.org/2zo25wE
+https://s.kkcpct.org/2gWFiQU
 
 近期週報收藏區：
 https://week.kkcpct.org
