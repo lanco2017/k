@@ -78,7 +78,7 @@ func bible(text string,user_msgid string,reply_mode string) (string, string, str
 	//2017.01.06+ //https://regexper.com/#%5E(%E8%81%96%E7%B6%93%7C%E8%81%96%E6%9B%B8%7CBible%7Cbible%7C%EF%BD%82%EF%BD%89%EF%BD%82%EF%BD%8C%EF%BD%85%7C%EF%BC%A2%EF%BD%89%EF%BD%82%EF%BD%8C%EF%BD%85%7C%E5%8F%B0%E8%AA%9E%E8%81%96%E7%B6%93%E5%B7%B4%E5%85%8B%E7%A6%AE%E6%BC%A2%E7%BE%85%7C%E5%8F%B0%E8%AA%9E%E8%81%96%E7%B6%93%7C%E9%96%A9%E5%8D%97%E8%AA%9E%E8%81%96%E7%B6%93%7C%E5%8F%B0%E8%AA%9E%E8%81%96%E7%B6%93%E5%85%A8%E7%BE%85%7C%E5%85%A8%E6%B0%91%E5%8F%B0%E8%AA%9E%E8%81%96%E7%B6%93%E5%85%A8%E7%BE%85%7C%E5%8F%B0%E8%AA%9E%E8%81%96%E7%B6%93%E6%BC%A2%E7%BE%85%7C%E5%85%A8%E6%B0%91%E5%8F%B0%E8%AA%9E%E8%81%96%E7%B6%93%E6%BC%A2%E7%BE%85%7C%E4%B8%AD%E6%96%87%E8%81%96%E7%B6%93%7C%E4%B8%AD%E6%96%87%E8%81%96%E7%B6%93%E5%92%8C%E5%90%88%E6%9C%AC%E4%BF%AE%E8%A8%82%E7%89%88%7CRcuv%7Crcuv%7C%EF%BD%92%EF%BD%83%EF%BD%95%EF%BD%96%7C%EF%BC%B2%EF%BD%83%EF%BD%95%EF%BD%96%7C%E6%96%87%E8%A8%80%E6%96%87%E8%81%96%E7%B6%93%7C%E6%B7%B1%E6%96%87%E7%90%86%E5%92%8C%E5%90%88%E6%9C%AC%7C%E4%B8%AD%E6%96%87%E8%81%96%E7%B6%93%E6%96%B0%E8%AD%AF%E6%9C%AC%7Cncv%7CNcv%7C%EF%BC%AE%EF%BD%83%EF%BD%96%7C%EF%BD%8E%EF%BD%83%EF%BD%96%7C%E8%81%96%E7%B6%93%E4%B8%AD%E6%96%87%E8%AD%AF%E6%9C%AC%E4%BF%AE%E8%A8%82%E7%89%88%7Ctcv%7CTCV%7C%EF%BC%B4%EF%BD%83%EF%BD%96%7C%EF%BC%B4%EF%BC%A3%EF%BC%B6%7C%E6%97%A5%E6%96%87%E8%81%96%E7%B6%93%7C%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%81%96%E6%9B%B8%7CJP%20bible%7CJP%20Bible%7CJp%20bible%7C%E9%9F%93%E6%96%87%E8%81%96%E7%B6%93%7CKR%20bible%7CKr%20Bible%7CKr%20bible%7C%E8%8B%B1%E6%96%87%E8%81%96%E7%B6%93%7C%E8%8B%B1%E8%AA%9E%E8%81%96%E6%9B%B8%7CEng%20bible%7CENG%20Bible%7CEnglish%20bible%7C%E8%B6%8A%E5%8D%97%E8%81%96%E7%B6%93%7C%E4%BF%84%E6%96%87%E8%81%96%E7%B6%93%7C%E5%A4%9A%E5%9C%8B%E8%81%96%E7%B6%93%7C%E5%A4%9A%E8%AA%9E%E8%81%96%E7%B6%93%7C%E5%A4%9A%E8%AA%9E%E8%A8%80%E8%81%96%E7%B6%93%7C%E5%A4%9A%E5%9C%8B%E8%AA%9E%E8%81%96%E7%B6%93%7C%E5%A4%9A%E5%9C%8B%E8%AA%9E%E8%A8%80%E8%81%96%E7%B6%93%7Callbible%7Call%20bible%7CAll%20bible%7CAll%20Bible%7C%E7%B8%BD%E5%92%8C%E8%81%96%E7%B6%93%7C%E7%B6%9C%E5%90%88%E8%81%96%E7%B6%93%7C%E7%A0%94%E7%A9%B6%E8%81%96%E7%B6%93%7C%E8%81%96%E7%B6%93%E7%A0%94%E7%A9%B6%7C%E5%A4%9A%E7%89%88%E8%81%96%E7%B6%93%7C%E5%A4%9A%E7%89%88%E6%9C%AC%E8%A8%80%E8%81%96%E7%B6%93%7CAllbible)(%5Cs%7C%E3%80%80%7C%3A%7C%3B%7C%EF%BC%9A%7C%EF%BC%9B%7C-%7C%EF%BC%8D)(%5B%5Cuff21-%5Cuff3a%5Cuff41-%5Cuff5a%5Cuff10-%5Cuff19%5Cu30a0-%5Cu30ff%5Cu3040-%5Cu309f%5Cu4e00-%5Cu9fd5_a-zA-Z0-9%5D*)%5CD*(%5B0-9.%5D%7B0%2C%7D)(%5Cs%7C%E3%80%80%7C%3A%7C%3B%7C%EF%BC%9A%7C%EF%BC%9B)%7B0%2C%7D%5CD*(%5B0-9.%5C-%EF%BC%8D%EF%BD%9E%5C~%5D%7B0%2C%7D)
 	//reg := regexp.MustCompile("^(聖經|聖書|Bible|bible|ｂｉｂｌｅ|Ｂｉｂｌｅ|台語聖經巴克禮漢羅|台語聖經|閩南語聖經|台語聖經全羅|全民台語聖經全羅|台語聖經漢羅|全民台語聖經漢羅|中文聖經|中文聖經和合本修訂版|Rcuv|rcuv|ｒｃｕｖ|Ｒｃｕｖ|文言文聖經|深文理和合本|中文聖經新譯本|ncv|Ncv|Ｎｃｖ|ｎｃｖ|聖經中文譯本修訂版|tcv|TCV|Ｔｃｖ|ＴＣＶ|日文聖經|日本語聖書|JP bible|JP Bible|Jp bible|韓文聖經|KR bible|Kr Bible|Kr bible|英文聖經|英語聖書|Eng bible|ENG Bible|English bible|越南聖經|俄文聖經|多國聖經|多語聖經|多語言聖經|多國語聖經|多國語言聖經|allbible|all bible|All bible|All Bible|總和聖經|綜合聖經|研究聖經|聖經研究|多版聖經|多版本言聖經|Allbible)(\\s|　|:|;|：|；|-|－)([\uff21-\uff3a\uff41-\uff5a\uff10-\uff19\u30a0-\u30ff\u3040-\u309f\u4e00-\u9fd5_a-zA-Z0-9]*)\\D*([0-9.]{0,})(\\s|　|:|;|：|；){0,}\\D*([0-9.\\-－～\\~]{0,})")
 	//2017.01.11+  https://34e.cc/552 //\u0400-\u04ff\u0500-\u052f=俄文 https://unicode-table.com/cn/blocks/cyrillic-supplement/  \u0370—\u03ff\u1f00-\u1fff\u2c80-\u2cff=希臘 \u0590-\u05ff=希伯來文 \u1100-\u11ff\u3130—\u318f\uac00-\ud7af\ua960-\ua97f=韓文  00C0-00FF=德法(http://www.programmer-club.com.tw/ShowSameTitleN/general/4309.html)
-	reg := regexp.MustCompile("^(聖經|聖書|Bible|bible|ｂｉｂｌｅ|Ｂｉｂｌｅ|多版本聖經|魯凱語聖經|魯凱聖經|rukai|客家聖經|台語聖經巴克禮漢羅|台語聖經巴克禮全羅|台語聖經馬雅各全羅|台語聖經馬雅各漢羅|台語聖經|閩南語聖經|台語聖經全羅|全民台語聖經全羅|台語聖經漢羅|全民台語聖經漢羅|中文聖經|中文聖經和合本修訂版|Rcuv|rcuv|ｒｃｕｖ|Ｒｃｕｖ|文言文聖經|深文理和合本|中文聖經新譯本|ncv|Ncv|Ｎｃｖ|ｎｃｖ|聖經中文譯本修訂版|tcv|TCV|Ｔｃｖ|ＴＣＶ|日文聖經|日本語聖書|JP bible|JP Bible|Jp bible|韓文聖經|KR bible|Kr Bible|Kr bible|英文聖經|英語聖書|Kjv|kjv|Ｋｊｖ|ｋｊｖ|Eng bible|ENG Bible|English bible|BBE|Bbe|bbe|ＢＢＥ|Ｂｂｅ|ｂｂｅ|英文聖經BBE|英文聖經WEB|WEB|Web|web|ＷＥＢ|Ｗｅｂ|ｗｅｂ|英文聖經ASV|ASV|Asv|asv|ＡＳＶ|Ａｓｖ|ａｓｖ|英文聖經Darby|darby|DARBY|Ｄａｒｂｙ|ＤＡＲＢＹ|ｄａｒｂｙ|英文聖經ERV|erv|ERV|Erv|ＥＲＶ|Ｅｒｖ|ｅｒｖ|希臘聖經|lxx|LXX|Lxx|ＬＸＸ|Ｌｘｘ|ｌｘｘ|希伯來文聖經|馬索拉聖經|bhs|Bhs|BHS|ＢＨＳ|Ｂｈｓ|ｂｈｓ|越南聖經|俄文聖經|多國聖經|多語聖經|多語言聖經|多國語聖經|多國語言聖經|allbible|all bible|All bible|All Bible|總和聖經|綜合聖經|研究聖經|聖經研究|多版聖經|多版本言聖經|Allbible)(\\s|　|:|;|：|；|-|－)([\u0590-\u05ff\u0370—\u03ff\u1f00-\u1fff\u2c80-\u2cff\u0400-\u04ff\u0500-\u052f\uff21-\uff3a\uff41-\uff5a\uff10-\uff19\u30a0-\u30ff\u3040-\u30ff\u31f0-\u31ff\u4e00-\u9fff\u1100-\u11ff\u3130—\u318f\uac00-\ud7af\ua960-\ua97f_a-zA-Z0-9]*)\\D*([0-9.]{0,})(\\s|　|:|;|：|；){0,}\\D*([0-9.\\-－～\\~]{0,})")
+	reg := regexp.MustCompile("^(聖經|聖書|Bible|bible|ｂｉｂｌｅ|Ｂｉｂｌｅ|多版本聖經|鄒語聖經|鄒|tsou|魯凱語聖經|魯凱聖經|rukai|客家聖經|台語聖經巴克禮漢羅|台語聖經巴克禮全羅|台語聖經馬雅各全羅|台語聖經馬雅各漢羅|台語聖經|閩南語聖經|台語聖經全羅|全民台語聖經全羅|台語聖經漢羅|全民台語聖經漢羅|中文聖經|中文聖經和合本修訂版|Rcuv|rcuv|ｒｃｕｖ|Ｒｃｕｖ|文言文聖經|深文理和合本|中文聖經新譯本|ncv|Ncv|Ｎｃｖ|ｎｃｖ|聖經中文譯本修訂版|tcv|TCV|Ｔｃｖ|ＴＣＶ|日文聖經|日本語聖書|JP bible|JP Bible|Jp bible|韓文聖經|KR bible|Kr Bible|Kr bible|英文聖經|英語聖書|Kjv|kjv|Ｋｊｖ|ｋｊｖ|Eng bible|ENG Bible|English bible|BBE|Bbe|bbe|ＢＢＥ|Ｂｂｅ|ｂｂｅ|英文聖經BBE|英文聖經WEB|WEB|Web|web|ＷＥＢ|Ｗｅｂ|ｗｅｂ|英文聖經ASV|ASV|Asv|asv|ＡＳＶ|Ａｓｖ|ａｓｖ|英文聖經Darby|darby|DARBY|Ｄａｒｂｙ|ＤＡＲＢＹ|ｄａｒｂｙ|英文聖經ERV|erv|ERV|Erv|ＥＲＶ|Ｅｒｖ|ｅｒｖ|希臘聖經|lxx|LXX|Lxx|ＬＸＸ|Ｌｘｘ|ｌｘｘ|希伯來文聖經|馬索拉聖經|bhs|Bhs|BHS|ＢＨＳ|Ｂｈｓ|ｂｈｓ|越南聖經|俄文聖經|多國聖經|多語聖經|多語言聖經|多國語聖經|多國語言聖經|allbible|all bible|All bible|All Bible|總和聖經|綜合聖經|研究聖經|聖經研究|多版聖經|多版本言聖經|Allbible)(\\s|　|:|;|：|；|-|－)([\u0590-\u05ff\u0370—\u03ff\u1f00-\u1fff\u2c80-\u2cff\u0400-\u04ff\u0500-\u052f\uff21-\uff3a\uff41-\uff5a\uff10-\uff19\u30a0-\u30ff\u3040-\u30ff\u31f0-\u31ff\u4e00-\u9fff\u1100-\u11ff\u3130—\u318f\uac00-\ud7af\ua960-\ua97f_a-zA-Z0-9]*)\\D*([0-9.]{0,})(\\s|　|:|;|：|；){0,}\\D*([0-9.\\-－～\\~]{0,})")
 	log.Print("--抓取分析觀察--")
 	log.Print("$1 = 觸發關鍵字 = " + reg.ReplaceAllString(text, "$1"))
 	log.Print("$2 = 分割符 = " + reg.ReplaceAllString(text, "$2"))
@@ -8792,6 +8792,872 @@ func bible(text string,user_msgid string,reply_mode string) (string, string, str
 								print_string = Bible_print_string("啟","啟示錄", chap_string, "1","rukai")
 							default:
 								print_string = Bible_print_string("啟","啟示錄", chap_string, sec_string,"rukai")
+						}
+				}
+			default:
+				print_string = "聖經"
+				//print_string = "你是要找 " +  reg.ReplaceAllString(text, "$3") + " 對嗎？\n對不起，我還沒學呢...\n"
+		}
+	case "鄒語聖經","鄒","tsou":
+		log.Print(reg.ReplaceAllString(text, "$3"))
+		switch reg.ReplaceAllString(text, "$3") {
+
+			case "Gen","Genesis","創","創世","創世紀","創世記","Ge","ge","gen","창세기","Sáng-thế Ký","Бытие":
+				bible_short_name = "創"
+				switch chap_string {
+					case "":
+						print_string = "創世記"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("創","創世記", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("創","創世記", chap_string, sec_string,"tsou")
+						}
+				}
+			case "ex","Ex","Exodus","埃及","出","出埃及","出埃及記","출애굽기","エジプト","出エジプト","出エジプト記","Xuất Ê-díp-tô Ký","Исход":
+				bible_short_name = "出"
+				switch chap_string {
+					case "":
+						print_string = "出埃及記"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("出","出埃及記", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("出","出埃及記", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Lev","Leviticus","利","利未","利未記","Le","le","Левит","Lê-vi Ký","レビ記","レビ","레위기":
+				bible_short_name = "利"
+				switch chap_string {
+					case "":
+						print_string = "利未記"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("利","利未記", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("利","利未記", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Num","Numbers","民","民數","民數記","Nu","nu","민수기","民数","民数記","Dân-số Ký","Числа":
+				bible_short_name = "民"
+				switch chap_string {
+					case "":
+						print_string = "民數記"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("民","民數記", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("民","民數記", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Deut","Deuteronomy","申","申命","申命記","De","de","신명기","Phục-truyền Luật-lệ Ký","Второзаконие":
+				bible_short_name = "申"
+				switch chap_string {
+					case "":
+						print_string = "申命記"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("申","申命記", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("申","申命記", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Josh","Joshua","約書亞","約書亞記","Jos","jos","여호수아","ヨシュア記","ヨシュア","Giô-suê","Книга Иисуса Навина":
+				bible_short_name = "書"
+				switch chap_string {
+					case "":
+						print_string = "約書亞記"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("書","約書亞記", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("書","約書亞記", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Judg","Judges","士","士師","士師記","Jud","jud","jdg","Jdg","Книга Судей израилевых","Các Quan Xét","사사기":
+				bible_short_name = "士"
+				switch chap_string {
+					case "":
+						print_string = "士師記"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("士","士師記", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("士","士師記", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Ruth","路得","路得記","Ru","ru","Rut","rut","룻기","ルツ","ルツ記","Ru-tơ","Книга Руфи":
+				bible_short_name = "得"
+				switch chap_string {
+					case "":
+						print_string = "路得記"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("得","路得記", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("得","路得記", chap_string, sec_string,"tsou")
+						}
+				}
+			case "1 Sam","First Samuel","撒上","撒母耳記上","1Sa","1sa","サムエル記上","サムエル上","サム上","사무엘상","1 Sa-mu-ên","Первая книга Царств":
+				bible_short_name = "撒上"
+				switch chap_string {
+					case "":
+						print_string = "撒母耳記上"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("撒上","撒母耳記上", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("撒上","撒母耳記上", chap_string, sec_string,"tsou")
+						}
+				}
+			case "2 Sam","Second Samuel","撒下","撒母耳記下","2Sa","2sa","사무엘하","サムエル記下","サムエル下","サム下","2 Sa-mu-ên","Вторая книга Царств":
+				bible_short_name = "撒下"
+				switch chap_string {
+					case "":
+						print_string = "撒母耳記下"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("撒下","撒母耳記下", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("撒下","撒母耳記下", chap_string, sec_string,"tsou")
+						}
+				}
+			case "1 Kin","First Kings","王上","列王上","列王紀上","列王記上","1Ki","1ki","열왕기상","Третья книга Царств","1 Các Vua":
+				bible_short_name = "王上"
+				switch chap_string {
+					case "":
+						print_string = "列王紀上"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("王上","列王紀上", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("王上","列王紀上", chap_string, sec_string,"tsou")
+						}
+				}
+			case "2 Kin","Second Kings","王下","列王下","列王記下","列王紀下","2Ki","2ki","열왕기하","2 Các Vua","Четвертая книга Царств":
+				bible_short_name = "王下"
+				switch chap_string {
+					case "":
+						print_string = "列王紀下"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("王下","列王紀下", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("王下","列王紀下", chap_string, sec_string,"tsou")
+						}
+				}
+			case "1 Chr","First Chronicles","歷上","代上","歷代志上","歷代上","1Ch","1ch","Первая книга Паралипоменон","1 Sử-ký","歴上","歴代上","歴代志上","역대상":
+				bible_short_name = "代上"
+				switch chap_string {
+					case "":
+						print_string = "歷代志上"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("代上","歷代志上", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("代上","歷代志上", chap_string, sec_string,"tsou")
+						}
+				}
+			case "2 Chr","Second Chronicles","代下","歷下","歷代下","歷代志下","2Ch","2ch","역대하","歴代志下","歴代下","歴下","2 Sử-ký","Вторая книга Паралипоменон":
+				bible_short_name = "代下"
+				switch chap_string {
+					case "":
+						print_string = "歷代志下"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("代下","歷代志下", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("代下","歷代志下", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Ezra","拉","以斯拉","以斯拉記","Ezr","ezr","Первая книга Ездры","Ê-xơ-ra","エズラ","エズラ記","에스라":
+				bible_short_name = "拉"
+				switch chap_string {
+					case "":
+						print_string = "以斯拉記"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("拉","以斯拉記", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("拉","以斯拉記", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Neh","Nehemiah","尼","尼希米","尼希米記","Ne","ne","느헤미야","ネヘミヤ書","ネヘミヤ","Nê-hê-mi","Книга Неемии":
+				bible_short_name = "尼"
+				switch chap_string {
+					case "":
+						print_string = "尼希米記"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("尼","尼希米記", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("尼","尼希米記", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Esth","Esther","斯","以斯帖","以斯帖記","Es","est","Есфирь","Ê-xơ-tê","エステル","エステル記","에스더":
+				bible_short_name = "斯"
+				switch chap_string {
+					case "":
+						print_string = "以斯帖記"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("斯","以斯帖記", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("斯","以斯帖記", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Job","job","伯","約伯","約伯記","Книга Иова","Gióp","ヨブ","ヨブ記","욥기":
+				bible_short_name = "伯"
+				switch chap_string {
+					case "":
+						print_string = "約伯記"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("伯","約伯記", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("伯","約伯記", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Ps","Psalms","詩","詩篇","ps","시편","Thi-thiên","Псалтирь":
+				bible_short_name = "詩"
+				switch chap_string {
+					case "":
+						print_string = "詩篇"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("詩","詩篇", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("詩","詩篇", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Prov","Proverbs","箴","箴言","Pr","pr","Притчи Соломона","Châm-ngôn","잠언":
+				bible_short_name = "箴"
+				switch chap_string {
+					case "":
+						print_string = "箴言"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("箴","箴言", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("箴","箴言", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Eccl","Ecclesiastes","傳","傳道","傳道書","Ec","ec","Книга Екклезиаста","или Проповедника","Truyền-đạo","伝道の書","伝道","伝","伝道書","전도서":
+				bible_short_name = "傳"
+				switch chap_string {
+					case "":
+						print_string = "傳道書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("傳","傳道書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("傳","傳道書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Song","Song of Solomon","歌","雅歌","So","so","sng","Sng","Песнь песней Соломона","Nhã-ca","아가":
+				bible_short_name = "歌"
+				switch chap_string {
+					case "":
+						print_string = "雅歌"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("歌","雅歌", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("歌","雅歌", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Is","Isaiah","賽","以賽","以賽亞","以賽亞書","Isa","isa","Книга пророка Исаии","Ê-sai","イザヤ書","イザヤ","이사야":
+				bible_short_name = "賽"
+				switch chap_string {
+					case "":
+						print_string = "以賽亞書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("賽","以賽亞書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("賽","以賽亞書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Jer","Jeremiah","耶","耶利米","耶利米書","jer","예레미야","エレミヤ","エレミヤ書","Giê-rê-mi","Книга пророка Иеремии":
+				bible_short_name = "耶"
+				switch chap_string {
+					case "":
+						print_string = "耶利米書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("耶","耶利米書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("耶","耶利米書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Lam","Lamentations","哀","哀歌","耶利米哀歌","La","lam","예레미야애가","Ca-thương","Плач Иеремии":
+				bible_short_name = "哀"
+				switch chap_string {
+					case "":
+						print_string = "耶利米哀歌"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("哀","耶利米哀歌", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("哀","耶利米哀歌", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Ezek","Ezekiel","結","以西結","以西結書","Eze","eze","에스겔","エゼキエル書","エゼキエル","Ê-xê-chi-ên","Книга пророка Иезекииля":
+				bible_short_name = "結"
+				switch chap_string {
+					case "":
+						print_string = "以西結書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("結","以西結書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("結","以西結書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Dan","Daniel","但","但以理","但以理書","Da","da","Книга пророка Даниила","Đa-ni-ên","ダニエル書","ダニエル","다니엘":
+				bible_short_name = "但"
+				switch chap_string {
+					case "":
+						print_string = "但以理書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("但","但以理書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("但","但以理書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Hos","Hosea","何","何西","何西阿","何西阿書","Ho","ho","Книга пророка Осии","Ô-sê","ホセア書","ホセア","호세아":
+				bible_short_name = "何"
+				switch chap_string {
+					case "":
+						print_string = "何西阿書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("何","何西阿書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("何","何西阿書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Joel","珥","約珥","約珥書","Joe","joe","Книга пророка Иоиля","Giô-ên","ヨエル書","ヨエル","요엘":
+				bible_short_name = "珥"
+				switch chap_string {
+					case "":
+						print_string = "約珥書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("珥","約珥書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("珥","約珥書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Amos","摩","阿摩司書","Am","am","Книга пророка Амоса","A-mốt","アモス書","アモス","아모스":
+				bible_short_name = "摩"
+				switch chap_string {
+					case "":
+						print_string = "阿摩司書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("摩","阿摩司書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("摩","阿摩司書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Obad","Obadiah","俄","俄巴底亞","俄巴底亞書","Ob","ob","오바댜","オバデヤ書","オバデヤ","Áp-đia","Книга пророка Авдия":
+				bible_short_name = "俄"
+				switch chap_string {
+					case "":
+						print_string = "俄巴底亞書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("俄","俄巴底亞書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("俄","俄巴底亞書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Jon","Jonah","拿","約拿","約拿書","jon","요나","ヨナ書","ヨナ","Giô-na","Книга пророка Ионы":
+				bible_short_name = "拿"
+				switch chap_string {
+					case "":
+						print_string = "約拿書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("拿","約拿書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("拿","約拿書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Micah","彌","彌迦","彌迦書","Mic","mic","Книга пророка Михея","Mi-chê","ミカ書","ミカ","미가":
+				bible_short_name = "彌"
+				switch chap_string {
+					case "":
+						print_string = "彌迦書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("彌","彌迦書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("彌","彌迦書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Nah","Nahum","鴻","那鴻","那鴻書","Na","na","Книга пророка Наума","Na-hum","ナホム書","ナホム","나훔":
+				bible_short_name = "鴻"
+				switch chap_string {
+					case "":
+						print_string = "那鴻書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("鴻","那鴻書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("鴻","那鴻書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Habakkuk","哈","哈巴","哈巴谷","哈巴谷書","Hab","hab","Книга пророка Аввакума","Ha-ba-cúc","ハバクク書","ハバクク","ハバ","クク","ハバ書","하박국":
+				bible_short_name = "哈"
+				switch chap_string {
+					case "":
+						print_string = "哈巴谷書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("哈","哈巴谷書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("哈","哈巴谷書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Zeph","Zephaniah","番","西番雅","西番雅書","Zep","zep","스바냐","ゼパニヤ書","ゼパニヤ","Sô-phô-ni","Книга пророка Софонии":
+				bible_short_name = "番"
+				switch chap_string {
+					case "":
+						print_string = "西番雅書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("番","西番雅書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("番","西番雅書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Haggai","該","哈該","哈該書","Hag","hag","학개","ハガイ書","ハガイ","A-ghê","Книга пророка Аггея":
+				bible_short_name = "該"
+				switch chap_string {
+					case "":
+						print_string = "哈該書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("該","哈該書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("該","哈該書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Zech","Zechariah","亞","撒迦利亞","撒迦利亞書","Zec","zec","Книга пророка Захарии","Xa-cha-ri","스가랴","ゼカリヤ書","ゼカリヤ":
+				bible_short_name = "亞"
+				switch chap_string {
+					case "":
+						print_string = "撒迦利亞書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("亞","撒迦利亞書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("亞","撒迦利亞書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Malachi","瑪","","瑪拉","瑪拉基","瑪拉基書","Mal","mal","말라기","マラキ書","マラキ","Ma-la-chi","Книга пророка Малахии":
+				bible_short_name = "瑪"
+				switch chap_string {
+					case "":
+						print_string = "瑪拉基書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("瑪","瑪拉基書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("瑪","瑪拉基書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Matt","Matthew","太","馬太","馬太福音","Mt","mt","마태복음","マタイによる福音書","マタイ","マタイによる","Ma-thi-ơ","От Матфея святое благовествование":
+				bible_short_name = "太"
+				switch chap_string {
+					case "":
+						print_string = "馬太福音"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("太","馬太福音", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("太","馬太福音", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Mark","可","馬可","馬可福音","Mr","mr","マルコによる福音書","マルコ","マルコによる","마가복음","Mác","От Марка святое благовествование":
+				bible_short_name = "可"
+				switch chap_string {
+					case "":
+						print_string = "馬可福音"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("可","馬可福音", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("可","馬可福音", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Luke","路","路加","路加福音","Lu","lu","От Луки святое благовествование","Lu-ca","ルカによる福音書","ルカ","ルカによる","누가복음":
+				bible_short_name = "路"
+				switch chap_string {
+					case "":
+						print_string = "路加福音"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("路","路加福音", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("路","路加福音", chap_string, sec_string,"tsou")
+						}
+				}
+			case "John","約","約翰","約翰福音","Joh","joh","От Иоанна святое благовествование","Giăng","ヨハネによる福音書","ヨハネ","ヨハネによる","요한복음":
+				bible_short_name = "約"
+				switch chap_string {
+					case "":
+						print_string = "約翰福音"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("約","約翰福音", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("約","約翰福音", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Acts","徒","使徒","使徒行傳","Ac","ac","Деяния святых апостолов","Công-vụ Các Sứ-đồ","使徒行伝","사도행전":
+				bible_short_name = "徒"
+				switch chap_string {
+					case "":
+						print_string = "使徒行傳"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("徒","使徒行傳", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("徒","使徒行傳", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Rom","Romans","羅","羅馬","羅馬書","Ro","ro","Послание к Римлянам","Rô-ma","ローマ","ローマ人への手紙","로마서":
+				bible_short_name = "羅"
+				switch chap_string {
+					case "":
+						print_string = "羅馬書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("羅","羅馬書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("羅","羅馬書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "1 Cor","First Corinthians","林前","哥林多前","哥林多前書","1Co","1co","Первое послание к Коринфянам","1 Cô-rinh-tô","コリント人への第一の手紙","コリント一","コリント人への第一","고린도전서":
+				bible_short_name = "林前"
+				switch chap_string {
+					case "":
+						print_string = "哥林多前書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("林前","哥林多前書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("林前","哥林多前書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "2 Cor","Second Corinthians","林後","哥林多後","哥林多後書","2Co","2co","Второе послание к Коринфянам","2 Cô-rinh-tô","コリント人への第二の手紙","コリント二","コリント人への第二の","고린도후서":
+				bible_short_name = "林後"
+				switch chap_string {
+					case "":
+						print_string = "哥林多後書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("林後","哥林多後書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("林後","哥林多後書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Gal","Galatians","加","加拉太","加拉太書","Ga","ga","Послание к Галатам","Ga-la-ti","ガラテヤ","ガラテヤ人への手紙","갈라디아서":
+				bible_short_name = "加"
+				switch chap_string {
+					case "":
+						print_string = "加拉太書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("加","加拉太書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("加","加拉太書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Ephesians","弗","以弗所","以弗所書","Eph","eph","Послание к Ефесянам","Ê-phê-sô","エペソ人への手紙","エペソ","エペソ人","エペソ人の手紙","에베소서":
+				bible_short_name = "弗"
+				switch chap_string {
+					case "":
+						print_string = "以弗所書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("弗","以弗所書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("弗","以弗所書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Phil","Philippians","腓","腓立","腓立比","腓立比書","Php","php","빌립보서","ピリピ","ピリピ人.ピリピ人への手紙","Послание к Филиппийцам","Phi-líp":
+				bible_short_name = "腓"
+				switch chap_string {
+					case "":
+						print_string = "腓立比書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("腓","腓立比書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("腓","腓立比書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Col","col","Colossians","西","歌羅西","歌羅","歌羅西書","Послание к Колоссянам","Cô-lô-se","コロサイ人への手紙","コロサイ","コロ","골로새서":
+				bible_short_name = "西"
+				switch chap_string {
+					case "":
+						print_string = "歌羅西書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("西","歌羅西書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("西","歌羅西書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "1 Thess","First Thessalonians","帖前","帖撒羅尼迦前","帖撒羅尼迦前書","1Th","1th","데살로니가전서","テサロニケ人への第一の手紙","テサ一","テサロニケ一","1 Tê-sa-lô-ni-ca","Первое послание к Фессалоникийцам (Солунянам)":
+				bible_short_name = "帖前"
+				switch chap_string {
+					case "":
+						print_string = "帖撒羅尼迦前書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("帖前","帖撒羅尼迦前書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("帖前","帖撒羅尼迦前書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "2 Thess","Second Thessalonians","帖後","帖撒羅尼迦後","帖撒羅尼迦後書","2Th","2th","데살로니가후서","テサロニケ人への第二の手紙","テサ二","テサロニケ二","2 Tê-sa-lô-ni-ca","Второе послание к Фессалоникийцам (Солунянам)":
+				bible_short_name = "帖後"
+				switch chap_string {
+					case "":
+						print_string = "帖撒羅尼迦後書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("帖後","帖撒羅尼迦後書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("帖後","帖撒羅尼迦後書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "1 Tim","First Timothy","提前","提摩太前","提摩太前書","1Ti","1ti","Первое послание к Тимофею","1 Ti-mô-thê","テモテヘの第一の手紙","テモテ一","디모데전서":
+				bible_short_name = "提前"
+				switch chap_string {
+					case "":
+						print_string = "提摩太前書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("提前","提摩太前書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("提前","提摩太前書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "2 Tim","Second Timothy","提後","提摩太後","提摩太後書","2Ti","2ti","Второе послание к Тимофею","2 Ti-mô-thê","テモテヘの第二の手紙","テモテ二","디모데후서":
+				bible_short_name = "提後"
+				switch chap_string {
+					case "":
+						print_string = "提摩太後書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("提後","提摩太後書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("提後","提摩太後書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Titus","多","提多","提多書","Tit","tit","Послание к Титу","Tít","テトスヘの手紙","テトス","디도서":
+				bible_short_name = "多"
+				switch chap_string {
+					case "":
+						print_string = "提多書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("多","提多書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("多","提多書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Philem","Philemon","門","腓利","腓利門","腓利門書","Phm","phm","Послание к Филимону","Phi-lê-môn","ピレモンヘの手紙","ピレモン","빌레몬서":
+				bible_short_name = "門"
+				switch chap_string {
+					case "":
+						print_string = "腓利門書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("門","腓利門書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("門","腓利門書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Heb","Hebrews","來","希伯來","希伯來書","heb","Послание к Евреям","Hê-bơ-rơ","ヘブル人への手紙","ヘブル","히브리서":
+				bible_short_name = "來"
+				switch chap_string {
+					case "":
+						print_string = "希伯來書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("來","希伯來書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("來","希伯來書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "James","雅","雅各","雅各書","Jas","jas","Послание Иакова","Gia-cơ","ヤコブの手紙","ヤコブ","야고보서":
+				bible_short_name = "雅"
+				switch chap_string {
+					case "":
+						print_string = "雅各書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("雅","雅各書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("雅","雅各書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "1 Pet","First Peter","彼前","彼得前","彼得前書","1Pe","1pe","Первое послание Петра","1 Phi-e-rơ","ペテロの第一の手紙","ペテロ一","베드로전서":
+				bible_short_name = "彼前"
+				switch chap_string {
+					case "":
+						print_string = "彼得前書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("彼前","彼得前書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("彼前","彼得前書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "2 Pet","Second Peter","彼後","彼得後","彼得後書","2Pe","2pe","Второе послание Петра","2 Phi-e-rơ","ペテロの第二の手紙","ペテロ","베드로후서":
+				bible_short_name = "彼後"
+				switch chap_string {
+					case "":
+						print_string = "彼得後書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("彼後","彼得後書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("彼後","彼得後書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "1 John","First John","約一","約翰一書","約翰1","約翰1書","1Jo","1jo","Первое послание Иоанна","1 Giăng","ヨハネの第一の手紙","ヨハネ一","요한일서":
+				bible_short_name = "約一"
+				switch chap_string {
+					case "":
+						print_string = "約翰一書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("約一","約翰一書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("約一","約翰一書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "2 John","second John","約二","約翰二書","約翰2","約翰2書","2Jo","Второе послание Иоанна","2 Giăng","ヨハネの第二の手紙","ヨハネ二","요한2서":
+				bible_short_name = "約二"
+				switch chap_string {
+					case "":
+						print_string = "約翰二書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("約二","約翰二書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("約二","約翰二書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "3 John","Third John","約三","約翰三書","約翰3","約翰3書","3Jo","3jo","Третье послание Иоанна","3 Giăng","ヨハネの第三の手紙","ヨハネ三","요한3서":
+				bible_short_name = "約三"
+				switch chap_string {
+					case "":
+						print_string = "約翰三書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("約三","約翰三書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("約三","約翰三書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Jude","猶","猶大","猶大書","jude","Послание Иуды","Giu-đe","ユダの手紙","ユダ","유다서":
+				bible_short_name = "猶"
+				switch chap_string {
+					case "":
+						print_string = "猶大書"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("猶","猶大書", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("猶","猶大書", chap_string, sec_string,"tsou")
+						}
+				}
+			case "Rev","Revelation","啟","啟示","啟示錄","Re","re","ｒｅ","Ｒｅ","rev","Откровение ап. Иоанна Богослова (Апокалипсис)","Khải-huyền","ヨハネの黙示録","黙示録","요한계시록":
+				bible_short_name = "啟"
+				switch chap_string {
+					case "":
+						print_string = "啟示錄"  //不知章節的時候 //用來等觸發 UI 及特別說明文字
+					default:
+						switch sec_string {
+							case "":	//不知節的時候，知章
+								print_string = Bible_print_string("啟","啟示錄", chap_string, "1","tsou")
+							default:
+								print_string = Bible_print_string("啟","啟示錄", chap_string, sec_string,"tsou")
 						}
 				}
 			default:

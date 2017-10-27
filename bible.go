@@ -363,6 +363,16 @@ func Bible_print_all_var_string(short_name, output_name, chap_string, sec_string
 				bible_text_string += "\n【客家話（新約）】\n" + GetJson_bible(bible_json_string) + "\n" //把 JSON 丟過去分離出要的內容
 			}
 
+			bible_json_string = HttpGET_("http://bible.fhl.net/json/qb.php?chineses=" + short_name + "&chap=" + chap_string + "&sec=" + sec_string + "&version=rukai")
+			if (bible_json_string!="") && (GetJson_bible(bible_json_string)!="") {
+				bible_text_string += "\n【魯凱語聖經】\n" + GetJson_bible(bible_json_string) + "\n" //把 JSON 丟過去分離出要的內容
+			}
+
+			bible_json_string = HttpGET_("http://bible.fhl.net/json/qb.php?chineses=" + short_name + "&chap=" + chap_string + "&sec=" + sec_string + "&version=tsou")
+			if (bible_json_string!="") && (GetJson_bible(bible_json_string)!="") {
+				bible_text_string += "\n【鄒語聖經（新約）】\n" + GetJson_bible(bible_json_string) + "\n" //把 JSON 丟過去分離出要的內容
+			}
+
 			//https://www.bible.com/zh-TW/audio-bible-app-versions/1-kjv-king-james-version  //NRSV
 			bible_json_string = HttpGET_("http://bible.fhl.net/json/qb.php?chineses=" + short_name + "&chap=" + chap_string + "&sec=" + sec_string + "&version=kjv")
 			if (bible_json_string!="") && (GetJson_bible(bible_json_string)!="") {
