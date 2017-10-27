@@ -54,6 +54,7 @@ func GetJson_bible(json_text string) (string){
 
 	if int(find_bible.Record_count) > 1 {
 		//https://trello.com/c/IJ4gwpUU/1105-json-the-go-playground
+		//範圍經節的關鍵
 		for i := 0; i < int(find_bible.Record_count); i++ {
 			//https://trello.com/c/44jd5Afa/1108-the-go-playground
 			out_string += strings.Replace(fmt.Sprintf("%f", find_bible.Record[i].Sec),`.000000`, "", -1) + ". " + find_bible.Record[i].Bible_text + "\n"
