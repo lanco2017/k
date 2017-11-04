@@ -313,7 +313,7 @@ http://blog.kkcpct.org/#contact`
 					obj_message_event := linebot.NewImageMessage(ImageURL_event, ImageURL_event)
 
 					this_week_text_2 := `本週週報（2017/11/05）：
-https://s.kkcpct.org/2gWFiQU
+https://s.kkcpct.org/2AjZhRx
 
 近期週報收藏區：
 https://week.kkcpct.org
