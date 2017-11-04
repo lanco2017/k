@@ -328,9 +328,7 @@ https://news.kkcpct.org
 以免誤認為垃圾信擋掉。
 `
 event_text := 
-`下面是 2017 感恩節分享會的海報
-
-「活著真好！上帝改變了我的人生」
+`「活著真好！上帝改變了我的人生」
 時間：11/26（日）早上九點
 地點：台北公舘教會
 歡迎轉傳海報邀請親朋好友參加！
@@ -507,7 +505,7 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 					//if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(this_week_text_1),linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_nextweek_review).Do(); err != nil {
 					//if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_review).Do(); err != nil {
 					//if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_review).Do(); err != nil {
-					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_review,obj_message_week_1,linebot.NewTextMessage(this_week_text_2),linebot.NewTextMessage(event_text),obj_message_event).Do(); err != nil {
+					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_review,obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_event,linebot.NewTextMessage(event_text)).Do(); err != nil {
 							log.Print(486)
 							log.Print(err)
 					}
@@ -1562,7 +1560,7 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 							// }
 //							if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("本週教會電子週報從缺\n這只是示範效果可以如何展示"),obj_message_week_2,obj_message_week_3,linebot.NewTextMessage(next_week_msg),obj_message_nextweek_review).Do(); err != nil {
 							//if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(this_week_text_1),linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_nextweek_review).Do(); err != nil {
-							if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_review,obj_message_week_1,linebot.NewTextMessage(this_week_text_2),linebot.NewTextMessage(event_text),obj_message_event).Do(); err != nil {
+							if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_review,obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_event,linebot.NewTextMessage(event_text)).Do(); err != nil {
 									log.Print(7161)
 									log.Print(err)
 							}
