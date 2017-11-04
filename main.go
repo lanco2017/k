@@ -337,7 +337,7 @@ https://news.kkcpct.org
 歡迎轉傳海報邀請親朋好友參加！
 
 活動網路文字宣傳：
-https://event.oursweb.net/w/D1YvbcPX
+https://goo.gl/G1m46a
 `
 
 
