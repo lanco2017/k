@@ -309,7 +309,7 @@ http://blog.kkcpct.org/#contact`
 					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59fdfefff727e204462834ac/464163b341086a850bc4a74e9201574d/20171105index.jpg"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
-					ImageURL_event := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59fe05494ff30d8c5f12db95/567aa86d5d3d75a106303815ca00326e/%E6%B4%BB%E8%91%97%E7%9C%9F%E5%A5%BDA2%E6%B5%B7%E5%A0%B1.jpg"
+					ImageURL_event := `https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59fe05494ff30d8c5f12db95/567aa86d5d3d75a106303815ca00326e/%E6%B4%BB%E8%91%97%E7%9C%9F%E5%A5%BDA2%E6%B5%B7%E5%A0%B1.jpg`
 					obj_message_event := linebot.NewImageMessage(ImageURL_event, ImageURL_event)
 
 					this_week_text_2 := `本週週報（2017/11/05）：
@@ -508,7 +508,7 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 					//if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(this_week_text_1),linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_nextweek_review).Do(); err != nil {
 					//if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_review).Do(); err != nil {
 					//if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_review).Do(); err != nil {
-					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_review,obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_event).Do(); err != nil {
+					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_review,obj_message_week_1,obj_message_event).Do(); err != nil {
 							log.Print(486)
 							log.Print(err)
 					}
