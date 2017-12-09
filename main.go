@@ -504,7 +504,7 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 					//if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(),obj_message_week_2,obj_message_week_3,linebot.NewTextMessage(next_week_msg),obj_message_nextweek_review).Do(); err != nil {
 					//if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(this_week_text_1),linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_nextweek_review).Do(); err != nil {
 					//if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_review).Do(); err != nil {
-					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_review).Do(); err != nil {
+					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_week_1,obj_message_nextweek_review).Do(); err != nil {
 //					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_review,obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_event,linebot.NewTextMessage(event_text)).Do(); err != nil {
 							log.Print(486)
 							log.Print(err)
@@ -1559,7 +1559,7 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 							// 	return
 							// }
 //							if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("本週教會電子週報從缺\n這只是示範效果可以如何展示"),obj_message_week_2,obj_message_week_3,linebot.NewTextMessage(next_week_msg),obj_message_nextweek_review).Do(); err != nil {
-							if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(this_week_text_1),linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_nextweek_review).Do(); err != nil {
+							if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(this_week_text_1),obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_nextweek_review).Do(); err != nil {
 							//if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_review,obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_event,linebot.NewTextMessage(event_text)).Do(); err != nil {
 									log.Print(7161)
 									log.Print(err)
