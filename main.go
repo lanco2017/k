@@ -309,8 +309,8 @@ http://blog.kkcpct.org/#contact`
 					ImageURL_week_1 := "https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/5a2b78b82b559845ae902426/7073c4370d114e4d2aa03ed73bcba7f6/20171210.m.jpg"
 					obj_message_week_1 := linebot.NewImageMessage(ImageURL_week_1, ImageURL_week_1)
 
-					ImageURL_event := `https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59fe05494ff30d8c5f12db95/567aa86d5d3d75a106303815ca00326e/%E6%B4%BB%E8%91%97%E7%9C%9F%E5%A5%BDA2%E6%B5%B7%E5%A0%B1.jpg`
-					obj_message_event := linebot.NewImageMessage(ImageURL_event, ImageURL_event)
+					// ImageURL_event := `https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59fe05494ff30d8c5f12db95/567aa86d5d3d75a106303815ca00326e/%E6%B4%BB%E8%91%97%E7%9C%9F%E5%A5%BDA2%E6%B5%B7%E5%A0%B1.jpg`
+					// obj_message_event := linebot.NewImageMessage(ImageURL_event, ImageURL_event)
 
 					this_week_text_2 := `本週週報（2017/12/10）：
 https://s.kkcpct.org/2AoE4tx
@@ -327,15 +327,15 @@ https://news.kkcpct.org
 訂閱後請將 news@kkcpct.org 加為聯絡人。
 以免誤認為垃圾信擋掉。
 `
-event_text := 
-`「活著真好！上帝改變了我的人生」
-時間：11/26（日）早上九點
-地點：台北公舘教會
-歡迎轉傳海報邀請親朋好友參加！
+// event_text := 
+// `「活著真好！上帝改變了我的人生」
+// 時間：11/26（日）早上九點
+// 地點：台北公舘教會
+// 歡迎轉傳海報邀請親朋好友參加！
 
-活動網路文字宣傳：
-https://goo.gl/G1m46a
-`
+// 活動網路文字宣傳：
+// https://goo.gl/G1m46a
+// `
 
 
 		weektime_msg := "台北公館教會的聚會資訊：\n\n" +
@@ -504,8 +504,8 @@ iCalendar Feeds 使用方法請參照：https://s.kkcpct.org/2mbZYER`
 					//if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(),obj_message_week_2,obj_message_week_3,linebot.NewTextMessage(next_week_msg),obj_message_nextweek_review).Do(); err != nil {
 					//if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(this_week_text_1),linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_nextweek_review).Do(); err != nil {
 					//if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_review).Do(); err != nil {
-					//if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_review).Do(); err != nil {
-					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_review,obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_event,linebot.NewTextMessage(event_text)).Do(); err != nil {
+					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_read,linebot.NewTextMessage(next_week_msg),obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_nextweek_review).Do(); err != nil {
+//					if _, err = bot.ReplyMessage(event.ReplyToken, obj_message_nextweek_review,obj_message_week_1,linebot.NewTextMessage(this_week_text_2),obj_message_event,linebot.NewTextMessage(event_text)).Do(); err != nil {
 							log.Print(486)
 							log.Print(err)
 					}
