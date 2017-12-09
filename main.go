@@ -312,7 +312,7 @@ http://blog.kkcpct.org/#contact`
 					// ImageURL_event := `https://trello-attachments.s3.amazonaws.com/5897c415be467e461197bfbd/59fe05494ff30d8c5f12db95/567aa86d5d3d75a106303815ca00326e/%E6%B4%BB%E8%91%97%E7%9C%9F%E5%A5%BDA2%E6%B5%B7%E5%A0%B1.jpg`
 					// obj_message_event := linebot.NewImageMessage(ImageURL_event, ImageURL_event)
 
-					this_week_text_2 := `本週週報（2017/12/10）：
+					this_week_text_1 := `本週週報（2017/12/10）：
 https://s.kkcpct.org/2AoE4tx
 
 近期週報收藏區：
